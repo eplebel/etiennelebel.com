@@ -17,12 +17,12 @@ h4.centered {
 	}
 body {
 	/*line-height: 1.25;*/
-	font-size:15px;}
+	font-size:14px;}
 
 a.kinda-link:hover { cursor: pointer; }
 	
 .popUpStyle {
-	font-size:13px;
+	font-size:12px;
 	line-height:normal;
 	}
 .popUpOnHover { position:relative; }
@@ -162,13 +162,16 @@ p.article-type {
 
 .article-styling {
 	padding-top:5px; 
-	padding-bottom:30px; 
 	border-top: 1px solid lightgrey; } 
 .PDF-column {
 	vertical-align:top; 
 	text-align:right;
 	padding-left:5px;
 	line-height:18px;}
+.second-row {
+	padding-bottom:30px; 
+	padding-top:0px;
+}
 .article-title { 
 	font-size:15px;
 	font-weight: 600; 
@@ -176,13 +179,13 @@ p.article-type {
 .author-text {
 	color:#009933;
 	font-size:13px;
-	line-height:17px;
+	line-height:16px;
 	margin-top:3px;}
 .journal-text {
 	color:#999999;
 	font-style:italic;
 	font-size:13px;
-	line-height:17px;
+	line-height:16px;
 	display:inline-block;}
 .target-effects {
 	color:#663300;
@@ -198,28 +201,29 @@ p.article-type {
 	opacity: 0.40;
 	filter: alpha(opacity=40); /* For IE8 and earlier */
 	font-size:13px; 
-	line-height:17px;
+	line-height:16px;
 	display:inline-block;}
 .article-list-heading {
 	font-size:20px;
 	color:lightgrey;
 	text-align:center;
-	margin-top:0px;
+	margin-top:-5px;
 	margin-bottom:30px;
 	font-family:'Oswald',sans-serif;
 	text-transform:uppercase;
 }
 .secondary-link {
 	font-size:12px;
-	line-height:17px;
+	line-height:15px;
 	display:inline-block;
 	opacity:.65;
 	filter: alpha(opacity=65); /* For IE8 and earlier */}
 .media-attention-line {
 	font-size:12px;
-	line-height:17px;
+	line-height:15px;
 	opacity:.40;
 	filter: alpha(opacity=40); /* For IE8 and earlier */}
+.media-attention-line:hover { opacity:1;}
 .transparency-line {
 	margin-top:0px;
 	}
