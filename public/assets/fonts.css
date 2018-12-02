@@ -1,14 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,600,700);
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
 body, input {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, .navbar .brand {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 .skill.right{
