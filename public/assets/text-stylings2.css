@@ -327,8 +327,7 @@ p.article-type {
 .demo-card-wide.mdl-card { 
 	width: 100%; 
 	min-height:auto;
-	overflow: visible;
-    z-index: auto;}
+	}
 .mdl-card__supporting-text {
   padding-top:10px;
   padding-left:12px;
