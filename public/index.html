@@ -253,8 +253,7 @@
 															<a href="https://osf.io/f2er9/" target="_blank" title="Presentation/poster slides related to this paper." class="grey"><img src="logos/slide-icon.png" class="slide-icon"></a>
 															<a href="https://osf.io/gpu3a/" target="_blank" style="margin-left:5px;">[Supplementary Materials]</a>
 														</div>
-														<div class="author-contributions minimizeAC">
-															<strong>Author contributions</strong>: E. P. LeBel conceived the general idea, drafted and revised the manuscript, created the figures, and executed the analytic-reproducibility checks and meta-analyses for the application of the framework to the infidelity-distress effect. W. Vanpaemel provided substantial contributions to the conceptual development of the ideas presented. W. Vanpaemel, R. J. McCarthy, B. D. Earp, and M. Elson provided critical commentary and made substantial contributions to writing and revising the manuscript. All authors approved the final submitted version of the manuscript.
+														<div class="author-contributions minimizeAC">E. P. LeBel conceived the general idea, drafted and revised the manuscript, created the figures, and executed the analytic-reproducibility checks and meta-analyses for the application of the framework to the infidelity-distress effect. W. Vanpaemel provided substantial contributions to the conceptual development of the ideas presented. W. Vanpaemel, R. J. McCarthy, B. D. Earp, and M. Elson provided critical commentary and made substantial contributions to writing and revising the manuscript. All authors approved the final submitted version of the manuscript.
 														</div>
 														<div class="competing-interests-info">
 															<strong title="Competing commercial or financial interests.">Competing interests</strong>: None declared.
@@ -562,8 +561,7 @@
 												</div>
 												<div class="secondary-section">
 													<div class="secondary-section-on-hover" >
-														<div class="author-contributions minimizeAC">
-															<strong>Author contributions</strong>: All authors listed, have made substantial, direct and intellectual contribution to the work, and approved it for publication.
+														<div class="author-contributions minimizeAC">All authors listed, have made substantial, direct and intellectual contribution to the work, and approved it for publication.
 														</div>
 														
 														<div class="competing-interests-info">
@@ -3123,10 +3121,10 @@
 		var minimized_elements = $('div.minimizeAC');
 		minimized_elements.each(function(){    
 			var t = $(this).text();        
-			if(t.length < 125) return;
+			if(t.length < 80) return;
 			$(this).html(
-				t.slice(0,125)+'<span>... </span><a href="#" class="more">More</a>'+
-				'<span style="display:none;">'+ t.slice(125,t.length)+' <a href="#" class="less">Less</a></span>'
+				'<strong>Author Contributions:</strong> '+t.slice(0,80)+'<span>... </span><a href="#" class="more">More</a>'+
+				'<span style="display:none;">'+ t.slice(80,t.length)+' <a href="#" class="less">Less</a></span>'
 			);
 		}); 
 		$('a.more', minimized_elements).click(function(event){
