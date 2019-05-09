@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="google-site-verification" content="7CrO9Y_velY8TjF6s8CWKB1s2S8TGRdQ8NoZ-gHPDE0" />
+  <meta http-equiv="Cache-control" content="public">
+  <title itemprop='name'>Curate Science - EP LeBel</title>
+  <meta name="description" content="Curate Science is a platform to crowdsource the credibility of scientific research by curating its transparency, analytic reproducibility, analytic robustness, and replicability." />
+  <meta name="keywords" content="replication, replications, direct replication, conceptual replication, replicability, generalizability, analytic reproducibility, analytic robustness, research credibility, credibility of findings, sufficient transparency, open science, sufficient falsifiability, falsification, cumulative knowledge" />
+  
+  
+	<link rel="icon" type="image/png" href="../logos/author-logos/CS-snail-icon.png">
+	<link rel="apple-touch-icon" type="image/png" href="../logos/author-logos/CS-snail-icon.png">
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../assets/author-assets/fonts.css" media="screen" />
+	
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="../assets/author-assets/text-stylings-author-page_transparent-labels.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
+	
+	
+  <style>
+	<!--temp place for troubleshooting style issues-->
+	
+
+	
+.article-type-line2 { 
+	margin-top:2px;
+	margin-bottom:5px; }
+
+.secondary-link2 {
+	margin-top:5px;
+	font-size:10px;
+	line-height:15px;
+	display:inline-block;
+	opacity:0.5;
+	filter: alpha(opacity=50); } /* For IE8 and earlier */
+.video-icon2 {
+	text-indent:0px;
+	color: #686256;
+	top:4px;
+	font-size: 2rem;
+	margin-top:2px;
+	margin-left:1px;
+}
+a.pdf:link, a.pdf:visited, a.pdf:active {color: red; }
+a.pdf:hover { text-decoration: underline !important;}
+a.html:link, a.html:visited, a.html:active {color: black; }
+a.html:hover { text-decoration: underline !important;}
+a.preprint:link, a.preprint:visited, a.preprint:active {color: purple; }
+a.preprint:hover { text-decoration: underline !important;}
+.fulltextcomponent {
+	float:right;
+	text-align:right;
+	padding:4px;
+}
+.peer-review-info { margin-top:3px; }
+.funding-sources-info {margin-top:2px;}
+.competing-interests-info {margin-top:2px;}
+.author-contributions { margin-top:2px; }
+.author-text {
+	/*color:#009933;*/
+	/*color:#666666; testing gray color*/
+	color:#037529c4;
+	font-size:12px;
+	line-height:14px;
+	margin-top:3px;
+	opacity:.7;
+	pointer-events: none; /*needed to fix weird issue where author-text div preventing fulltext button hyperlink from working */
+	}
+.journal-text {
+	color:#999999;
+	font-style:italic;
+	font-size:12px;
+	line-height:14px;
+	display:inline-block;
+	opacity:.55; 
+	margin-top:0px;
+	margin-right:2px;}
+.grey {
+	opacity:.4;
+	font-size:12px;
+	line-height:14px;
+}
+.toDisplayBasic7Retroactive {
+	display:none;
+	position:absolute; 		
+	z-index:9998;
+	border:1px;
+	background-color:white;
+	border-style:solid;
+	border-width:1px;
+	border-color:darkgrey;
+	padding:3px;
+	top:-115px; 
+	left:-100px;
+	font-size:6px;
+	min-width:440px;}
+.toDisplayRepDetails {
+	display:none;
+	position:absolute; 		
+	z-index:9998;
+	border:1px;
+	background-color:white;
+	border-style:solid;
+	border-width:1px;
+	border-color:darkgrey;
+	padding:3px;
+	top:-65px; 
+	left:5px;
+	min-width:250px;
+	max-width:300px;}
+.container-fluid {
+	max-width:680px;
+	background-color:white;
+	padding-left:55px;
+	padding-right:55px;
+}
+.badge-repnum {
+	padding-left:2px;
+	padding-right:2px;
+	padding-top:1px;
+	padding-bottom:1px;
+	border-radius:3px;
+	line-height:8px;
+	border: .5px solid #e0e0e0;
+}
+.doi-dimmed {
+	opacity: 0.3;
+	filter: alpha(opacity=30); /* For IE8 and earlier */
+	font-size:12px; 
+	line-height:15px;
+	display:inline-block;}	
+  </style>
+</head>
+
+<body style="background-color:white;">
+
+
+
+
+ <div class="container-fluid" style="display:inline-block;">
+	
+	
+							
+						<div class="demo-card-wide mdl-card mdl-shadow--2dp" id="10.1177/2515245918787489" style="margin-top:2px;">
+							<div class="mdl-card__supporting-text">
+											<div class='fulltextcomponent'>	
+												<div class="impact-info">
+													<span title="Article/Preprint have been cited 20 times (as of December 15, 2018; Google Scholar)"><i class="fas fa-quote-right"></i> 20</span>
+													<span style="margin-left:7px;" title="Article PDF (postprint) has been downloaded 1,033 times (as of December 15, 2018)"><i class="fas fa-download"></i> 1K</span> 
+												</div> 
+												<a href="https://etiennelebel.com/documents/lebeletal(2018,ampss)a-unified-framework-to-quantify-the-credibility-of-scientific-findings.pdf" target="_blank" class="pdf" title="View PDF of this article (postprint).">pdf</a> 
+												
+												
+												<br>
+												<div class="impact-info" ><span title="HTML has been viewed 4,862 times (as of December 14, 2018)"><i class="fas fa-eye"></i> 5K</span> </div>
+												<div style="display:inline-block;margin-top:3px;">
+													<a href='http://journal.frontiersin.org/article/10.3389/fpsyg.2017.01004/full' target='_blank' title='View interactive HTML version of this article (postprint).' class="html"  style="margin-top:3px;">html</a>
+													
+												</div>
+												<br>
+												<div class="impact-info"> <span style="margin-left:5px;" title="Preprint has been downloaded 1,486 times (as of December 15, 2018)"><i class="fas fa-download"></i> 1.5K</span> 
+												<span title="Preprint has been viewed 3,862 times (as of December 14, 2018)"><i class="fas fa-eye"></i> 4K</span> 
+												</div>
+												
+												<a class="preprint" href='https://psyarxiv.com/uwmr8' target='_blank' title='View preprint of this article.'><i class="ai ai-osf ai-2x small-icon osf-purple-icon" style="margin-top:3px;"></i> preprint</a>
+												
+											</div>
+											
+											<div class='article-title'>Registered Replication Report of Finkel, Rusbult, Kumashiro, & Hannon's (2002) Study 1</div>
+											<div class='author-text'>I Cheung, L Campbell, EP LeBel, ... , & JC Yong <strong>(2016)</strong> </div>
+										
+										
+											<div class='journal-text'>Perspectives on Psychological Science</div> <div class='doi-dimmed'> <a href='https://dx.doi.org/10.1177/1745691616664694' target='_blank' class='doi-dimmed grey'>10.1177/1745691616664694 <i class='fas fa-external-link-alt' style="font-size:.75em;"></i></a></div>
+											
+											<div class="article-type-line2">
+												<div style="display:inline;" class="popUpOnHover">
+													<span class="label label-info-brown">Replication <span class="badge badge-repnum ">16</span></span> 
+													<span class="toDisplayRepDetails popUpStyle">
+														<span style="font-size:12px;">Article reports 16 replications of <a>Finkel et al.'s (2002) Study 1</a> 'commitment boosts forgiveness' effect.</span>
+														<br><br>
+														<span style="font-size:10px;color:gray;">A replication is a study that uses a methodology that is 'close' or 'very close' to a previous study (see <a href="http://curatescience.org/logos/replication-taxonomy-v4_small.png" target="_blank">replication taxonomy</a> for details).</span>
+													</span>
+												</div>
+												
+												<span class='label label-info-red' title='Article is a Registered Report (methods are peer-reviewed and preregistered prior to data collection).'>Registered Report</span>
+												
+											</div>
+											
+											<div class="transparency-line">
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/preregistered-plus-available.png' class='shrunk-20 transparent'>
+													<span class="toDisplayBadgePopupOneLinkPrereg popUpStyle">
+														<div style="min-width:200px;white-space:normal;">
+															<span class="transp-popup-main-heading">Preregistration</span>
+															<div class="prereg-type-text">Preregistered study design + analyses</div>
+															<a href="https://osf.io/2h6tf/" target="_blank"> <i class="ai ai-osf ai-2x small-icon"></i> <span style="font-size:10px;"> https://osf.io...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+														</div>
+													</span>	
+												</div>
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/materials-available.png' class='shrunk-20 transparent'>
+													<span class="toDisplayBadgePopupOneLink popUpStyle">
+														<div style="min-width:200px;white-space:normal;">
+															<span class="transp-popup-main-heading">Public Study Materials</span>
+															<br>
+															<a href="https://osf.io/knfy4/" target="_blank"><i class="ai ai-osf ai-2x small-icon"></i> <span style="font-size:10px;"> https://osf.io...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+														</div>
+													</span>
+												</div>
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/data-available.png' class='shrunk-20 transparent'>
+													<span class="toDisplayBadgePopupOneLink popUpStyle">
+														<div style="min-width:200px;white-space:normal;">
+															<span class="transp-popup-main-heading">Public Data</span>
+															<br>
+															<a href="https://osf.io/3nz7j/" target="_blank"> <i class="ai ai-osf ai-2x small-icon"></i> <span style="font-size:10px;"> https://osf.io...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+															
+														</div>
+													</span>
+												</div>
+												
+												<div style='display:inline;' class='popUpOnHover'>
+													<img src='../logos/author-logos/sprite-icons/code-available.svg' class='shrunk-22 transparent'>
+													<span class='toDisplayBadgePopupOneLink popUpStyle'>
+														<div style='min-width:280px;white-space:normal;'>
+															<span class='transp-popup-main-heading'>Public Code</span>
+															<br>
+															<a href='https://codeocean.com/2018/04/19/code-for-colon-self-esteem-relationship-threat-and-dependency-regulation-colon-independent-replication-of-murray-rose-bellavia-holmes-and-kusche-lpar-2002-rpar-study-3/code' target='_blank'> 
+															<img src="../logos/author-logos/code-ocean-icon.png" width="15">
+															<span style="font-size:10px;"> https://codeocean...</span>
+															<i class='fas fa-external-link-alt'></i></a>
+															
+															
+															
+														</div>
+													</span>
+												</div>
+												
+												<div style="display:inline;" class="popUpOnHover">
+													<img src="../logos/author-logos/sprite-icons/disclosure-available.png" class="shrunk-20 transparent">
+													<span class="toDisplayBasic4Submission popUpStyle" style="padding-left:5px;text-indent:0px;white-space:nowrap;">
+														<span class="transp-popup-main-heading">Reporting Standards</span>
+														<br>
+														<span style="font-size:10px;font-weight:600;color:gray;">Study complies with the <a href="https://www.psychologicalscience.org/publications/psychological_science/ps-submissions#DISC" target="_blank">Basic 4 (at submission, PSCI, 2014)</a> <img src="../logos/author-logos/sprite-icons/disclosure-available.png" class="shrunk-16 transparent"> reporting standard:</span>
+														<ol >
+															<li><strong>Excluded data (subjects/observations):</strong> Full details reported in article.</li>
+															<li><strong>Experimental conditions:</strong> Full details reported in article.</li>
+															<li><strong>Outcome measures:</strong> Full details reported in article.</li>
+															<li><strong>Sample size determination:</strong> Full details reported in article.</li>
+														</ol>
+														
+													</span>
+												</div>
+												<div style='display:inline;' class='popUpOnHover'>
+												   <span class='label label-info-commentaries' >Commentaries <span class='badge badge-repnum'>1</span></span> 
+												   <span class='toDisplayCommentaries popUpStyle' style='padding-left:5px;white-space:nowrap;'>
+												   Commentaries about this article: 
+												   <ul style="font-size:12px;"><li><a href='https://static1.squarespace.com/static/56c0eeaa7c65e465b5050feb/t/5804396dbe6594564b28c24b/1476671855511/2016_Finkel_PPS.pdf' target='_blank'>Finkel (2016)</a></li></ul></span>
+												</div>
+												
+											</div>
+											<div class="more-button full-text" id="moreDiv-10.1177/2515245918787489" style="margin-top:4px;">	
+												<button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect expand-button rotate" onclick="toggle_visibility('abstract-section-10.1177/2515245918787489', 'moreDiv-10.1177/2515245918787489');" title="Toggle abstract, key figures, peer-review info, and other details.">
+													 <i class="fa fa-chevron-down" style="color:grey;" ></i>
+												</button>
+											</div>
+											<div id="abstract-section-10.1177/2515245918787489" class="abstract-section" style="display:none;">
+												<div class="abstractText minimize">
+													Societies invest in scientific studies to better understand the world and attempt to harness such improved understanding to address pressing societal problems. Published research, however, can be useful for theory or application only if it is credible. In science, a credible finding is one that has repeatedly survived risky falsification attempts. However, state-of-the-art meta-analytic approaches cannot determine the credibility of an effect because they do not account for the extent to which each included study has survived such attempted falsification. To overcome this problem, we outline a unified framework for estimating the credibility of published research by examining four fundamental falsifiability-related dimensions: (a) transparency of the methods and data, (b) reproducibility of the results when the same data-processing and analytic decisions are reapplied, (c) robustness of the results to different data-processing and analytic decisions, and (d) replicability of the effect. This framework includes a standardized workflow in which the degree to which a finding has survived scrutiny is quantified along these four facets of credibility. The framework is demonstrated by applying it to published replications in the psychology literature. Finally, we outline a Web implementation of the framework and conclude by encouraging the community of researchers to contribute to the development and crowdsourcing of this platform.
+													
+												</div>
+												<div class="key-words">
+													<span class="mdl-chip small-chip">      
+														<span class="mdl-chip__text small-chip-text">research credibility</span>
+													</span>
+													<span class="mdl-chip small-chip">      
+														<span class="mdl-chip__text small-chip-text">transparency</span>
+													</span>
+													<span class="mdl-chip small-chip">      
+														<span class="mdl-chip__text small-chip-text">open science </span>
+													</span>
+													<span class="mdl-chip small-chip">      
+														<span class="mdl-chip__text small-chip-text">analytic reproducibility </span>
+													</span>
+													<span class="mdl-chip small-chip">      
+														<span class="mdl-chip__text small-chip-text">analytic robustness </span>
+													</span>
+													<span class="mdl-chip small-chip">      
+														<span class="mdl-chip__text small-chip-text">replicability </span>
+													</span>
+												</div>
+												<p class="imglist">
+												  
+												  <a href="../logos/author-logos/figures/lmeev2018-figure-2.png" data-fancybox="images" data-caption="LeBel, McCarthy, Earp, Elson, & Vanpaemel (2018) - Figure 2">
+													<img src="../logos/author-logos/figures/lmeev2018-figure-2.png" width="85px" height="85px;" style="object-fit:cover;"/>
+												  </a>
+												  												  
+												  <a href="https://www.youtube.com/watch?v=YQGOpCCatvU" data-fancybox="images" data-caption="LeBel, McCarthy, Earp, Elson, & Vanpaemel (2018) - Video 1">
+													<img src="../logos/author-logos/figures/video1thumb_.png" width="95px" title="Video related to this paper.">
+												  </a>
+												  
+												  <a href="https://www.hakaimagazine.com/wp-content/uploads/gannet-diving-1.gif" data-fancybox="images" data-caption="LeBel, McCarthy, Earp, Elson, & Vanpaemel (2018) - Figure 5">
+													<img src="https://www.hakaimagazine.com/wp-content/uploads/gannet-diving-1.gif" width="85px" height="85px;" style="object-fit:cover;"/>
+												  </a>
+												  <a href="https://rexplorations.files.wordpress.com/2015/09/n-50-mu-10-sd-1.gif" data-fancybox="images" data-caption="LeBel, McCarthy, Earp, Elson, & Vanpaemel (2018) - Figure 6">
+													<img src="https://rexplorations.files.wordpress.com/2015/09/n-50-mu-10-sd-1.gif" width="85px" height="85px;" style="object-fit:cover;"/>
+												  </a>
+												  
+												</p>
+												<div class="secondary-section">
+													<div class="secondary-section-on-hover" >
+														<div class="author-contributions minimizeAC">E. P. LeBel conceived the general idea, drafted and revised the manuscript, created the figures, and executed the analytic-reproducibility checks and meta-analyses for the application of the framework to the infidelity-distress effect. W. Vanpaemel provided substantial contributions to the conceptual development of the ideas presented. W. Vanpaemel, R. J. McCarthy, B. D. Earp, and M. Elson provided critical commentary and made substantial contributions to writing and revising the manuscript. All authors approved the final submitted version of the manuscript.
+														</div>
+														<div class="competing-interests-info">
+															<strong title="Competing commercial or financial interests.">Competing interests</strong>: EP LeBel is founder and lead of Curate Science, a platform to label and link the...<a>More</a>
+														</div>
+														<div class="funding-sources-info">
+															<strong>Funding sources</strong>: <span title="Digital Society research program">Ministry of Culture and Science millenium grant to support viewpoint diversity and...<a>More</a></span>
+														</div>
+														<div class="peer-review-info">
+															<strong>Editor</strong>: <span style="color:#009933;">S Vazire</span> &nbsp;&nbsp;<strong>Reviewers</strong>: <span style="color:#009933;">Anonymous reviewer 1, Anonymous reviewer 2, Anonymous reviewer 3, Anonymous reviewer 4 </span>
+															<div class='open-peer-review'>
+      <a href='http://s3-eu-west-1.amazonaws.com/ubiquity-partner-network/ucp/journal/collabra/PR-Collabra-24.pdf' target='_blank'> Open peer review <i class='fas fa-external-link-alt' style="font-size:.75em;"></i></a>
+      </div>
+														</div>
+														
+														<div class="secondary-link2">
+															<a href="https://www.youtube.com/watch?v=WBjhxjWDiHw" target="_blank" title="Video related to this paper." class="grey"><span class="glyphicon glyphicon-facetime-video video-icon2"></span></a> 
+															<a href="https://osf.io/f2er9/" target="_blank" title="Presentation/poster slides related to this paper." class="grey"><img src="../logos/author-logos/sprite-icons/slide-icon.png" class="slide-icon"></a>
+															<a href="https://osf.io/gpu3a/" target="_blank" style="margin-left:5px;">Suppl. Materials #1</a>  
+															<div style="color:black;">News coverage: <a href="http://www.nytimes.com/2015/08/28/science/many-social-science-findings-not-as-strong-as-claimed-study-says.html?action=click&contentCollection=science&region=rank&module=package&version=highlights&contentPlacement=1&pgtype=sectionfront&_r=1" target="_blank">NYT</a> &#8226; <a href="https://inews.co.uk/essentials/news/science/smart-doesnt-stop-prejudiced-just-changes-prejudices/" target="_blank">iNews</a> </div>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+											
+											
+										
+							</div>
+						</div>
+					
+						<div class="demo-card-wide mdl-card mdl-shadow--2dp" id="10.1177/1948550612448196">
+							<div class="mdl-card__supporting-text">
+											<div class='fulltextcomponent'>	
+												<div class="impact-info">
+													<span title="Article/Preprint have been cited 20 times (as of December 15, 2018; Google Scholar)"><i class="fas fa-quote-right"></i> 20</span>
+													<span style="margin-left:7px;" title="Article PDF (postprint) has been downloaded 1,033 times (as of December 15, 2018)"><i class="fas fa-download"></i> 1K</span> 
+												</div> 
+												<a href="https://etiennelebel.com/documents/lebeletal(2018,ampss)a-unified-framework-to-quantify-the-credibility-of-scientific-findings.pdf" target="_blank" class="pdf" title="View PDF of this article (postprint).">pdf</a> 
+												
+												
+												<br>
+												<div class="impact-info" ><span title="HTML has been viewed 4,862 times (as of December 14, 2018)"><i class="fas fa-eye"></i> 5K</span> </div>
+												<div style="display:inline-block;margin-top:3px;">
+													<a href='http://journal.frontiersin.org/article/10.3389/fpsyg.2017.01004/full' target='_blank' title='View interactive HTML version of this article (postprint).' class="html"  style="margin-top:3px;">html</a>
+													
+												</div>
+												<br>
+												<div class="impact-info"> <span style="margin-left:5px;" title="Preprint has been downloaded 1,486 times (as of December 15, 2018)"><i class="fas fa-download"></i> 1.5K</span> 
+												<span title="Preprint has been viewed 3,862 times (as of December 14, 2018)"><i class="fas fa-eye"></i> 4K</span> 
+												</div>
+												
+												<a class="preprint" href='https://psyarxiv.com/uwmr8' target='_blank' title='View preprint of this article.'><i class="ai ai-osf ai-2x small-icon osf-purple-icon" style="margin-top:3px;"></i> preprint</a>
+												
+											</div>
+											
+											<div class='article-title'>The interactive role of implicit and explicit partner evaluations on ongoing affective and behavioral romantic realities</div>
+											<div class='author-text'>EP LeBel & L Campbell <strong>(2013)</strong></div>
+										
+										
+											<div class='journal-text'>Social Psychological and Personality Science</div> <div class='doi-dimmed'> <a href='https://dx.doi.org/10.1177/1948550612448196' target='_blank' class='doi-dimmed grey'>10.1177/1948550612448196 <i class='fas fa-external-link-alt' style="font-size:.75em;"></i></a></div>
+											<div class="article-type-line2">
+												<span class='label label-info-black'>Original</span>
+												
+											</div>
+											
+											<div class="transparency-line">
+												<a title="Preregistration information is not available"><img src="../logos/author-logos/sprite-icons/preregistered-unavailable.png" class="shrunk-20" style="opacity:.7;"></a>
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/materials-available.png' class='shrunk-20 transparent'>
+													<span class="toDisplayBadgePopupOneLink popUpStyle">
+														<div style="min-width:280px;white-space:normal;">
+															<span class="transp-popup-main-heading">Study Materials</span> <span style="font-size:10px;">(protected access; login required)</span>
+															<br>
+															<a href="https://www.diw.de/sixcms/detail.php?id=diw_01.c.558445.en#558277" target="_blank"> <span style="font-size:10px;"> https://www.diw.de...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+														</div>
+													</span>
+												</div>
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/data-available.png' class='shrunk-20 transparent'>
+													<span class="toDisplayBadgePopupOneLink popUpStyle">
+														<div style="min-width:280px;white-space:normal;">
+															<span class="transp-popup-main-heading">Data</span> <span style="font-size:10px;">(protected access; login required)</span>
+															<br>
+															<a href="https://www.diw.de/sixcms/detail.php?id=diw_01.c.558445.en#558277" target="_blank">  <span style="font-size:10px;"> https://www.diw.de...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+															
+														</div>
+													</span>
+												</div>
+												
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/code-available.svg' class='shrunk-22 transparent'>
+													<span class="toDisplayBadgePopupTwoLinks popUpStyle">
+														<div style="min-width:200px;white-space:normal;">
+															<span class="transp-popup-main-heading">Public Code</span>
+															<br>
+															<a href="https://osf.io/3nz7j/" target="_blank"> <i class="ai ai-osf ai-2x small-icon"></i> <span style="font-size:10px;"> https://osf.io/3...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+															<br>
+															<a href="http://figshare.com/articles/LeBel_2010_S_I_Data_and_syntax_/953183" target="_blank"> <i class="ai ai-figshare ai-2x small-icon"></i> <span style="font-size:10px;"> https://figshare...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+														</div>
+													</span>
+												</div>
+												<div style="display:inline;" class="popUpOnHover">
+													<img src="../logos/author-logos/sprite-icons/disclosure-available.png" class="shrunk-20 transparent">
+													<span class="toDisplayBasic7Retroactive popUpStyle" style="padding-left:5px;text-indent:0px;">
+														<div style="white-space:normal;">
+															<span class="transp-popup-main-heading" style="font-size:14px;">Reporting Standards</span>
+															<br>
+															<span style="font-size:10px;font-weight:600;color:gray;">Study complies with the <a href="https://medium.com/@IGDORE/retroactive-disclosure-statements-make-the-past-more-useful-c1b2e73f4bae" target="_blank">Basic 7 (retroactive)</a> <img src="../logos/author-logos/sprite-icons/disclosure-available.png" class="shrunk-16 transparent"> reporting standard:</span>
+															<ol  style="white-space:normal;">
+																<li><strong>Excluded data (subjects/observations):</strong> Full details reported in article.</li>
+																<li><strong>Experimental conditions:</strong> Full details reported in article (N/A; no experimental conditions.</li>
+																<li><strong>Outcome measures:</strong> Several other predictor measures of related, but distinct, relationship constructs (IVs) were also assessed; these went unreported because we didn't... <a>More</a></li>
+																<li><strong>Sample size determination:</strong> Recruited as many heterosexual couples as possible.</li>
+																<li><strong>Unreported analyses/Analytic plans:</strong> The analytic plans for the predicted interactive effect between implicit partner evaluations and explicit partner perceptions (on both... <a >More</a></li>
+																<li><strong>Unreported related studies:</strong> None (full details reported in article).</li>
+																<li><strong>Other disclosures:</strong> None.</li>
+															</ol>
+															
+															<span style="font-size:10px;color:red;">Date of retroactive disclosure:</u> February 15, 2018.</span><br>
+															
+														</div>
+													</span>
+												</div>
+												
+											</div>
+											
+											
+											
+											
+											<div class="more-button full-text" id="moreDiv-10.1177/1948550612448196">	
+												<button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect expand-button rotate" onclick="toggle_visibility('abstract-section-10.1177/1948550612448196', 'moreDiv-10.1177/1948550612448196');" title="Toggle abstract, key figures, peer-review info, and other details.">
+													 <i class="fa fa-chevron-down" style="color:grey;" ></i>
+												</button>
+											</div>
+											
+											
+											
+										
+							</div>
+						</div>
+					
+					<div class="demo-card-wide mdl-card mdl-shadow--2dp" id="10.1177/1948550612448196">
+							<div class="mdl-card__supporting-text">
+											<div class='fulltextcomponent'>	
+												<div class="impact-info">
+													<span title="Article/Preprint have been cited 20 times (as of December 15, 2018; Google Scholar)"><i class="fas fa-quote-right"></i> 20</span>
+													<span style="margin-left:7px;" title="Article PDF (postprint) has been downloaded 1,033 times (as of December 15, 2018)"><i class="fas fa-download"></i> 1K</span> 
+												</div> 
+												<a href="https://etiennelebel.com/documents/lebeletal(2018,ampss)a-unified-framework-to-quantify-the-credibility-of-scientific-findings.pdf" target="_blank" class="pdf" title="View PDF of this article (postprint).">pdf</a> 
+												
+												
+												<br>
+												<div class="impact-info" ><span title="HTML has been viewed 4,862 times (as of December 14, 2018)"><i class="fas fa-eye"></i> 5K</span> </div>
+												<div style="display:inline-block;margin-top:3px;">
+													<a href='http://journal.frontiersin.org/article/10.3389/fpsyg.2017.01004/full' target='_blank' title='View interactive HTML version of this article (postprint).' class="html"  style="margin-top:3px;">html</a>
+													
+												</div>
+												<br>
+												<div class="impact-info"> <span style="margin-left:5px;" title="Preprint has been downloaded 1,486 times (as of December 15, 2018)"><i class="fas fa-download"></i> 1.5K</span> 
+												<span title="Preprint has been viewed 3,862 times (as of December 14, 2018)"><i class="fas fa-eye"></i> 4K</span> 
+												</div>
+												
+												<a class="preprint" href='https://psyarxiv.com/uwmr8' target='_blank' title='View preprint of this article.'><i class="ai ai-osf ai-2x small-icon osf-purple-icon" style="margin-top:3px;"></i> preprint</a>
+												
+											</div>
+											
+											<div class='article-title'>Badges to acknowledge open practices: A simple, low-cost, effective method for increasing transparency</div>
+											<div class='author-text'>MC Kidwell, ... , TE Hardwicke, TM Errington, S Fiedler, & BA Nosek <strong>(2016)</strong></div>
+										
+										
+											<div class='journal-text'>PLOS Biology</div> <div class='doi-dimmed'> <a href='https://dx.doi.org/10.1177/1948550612448196' target='_blank' class='doi-dimmed grey'>10.1371/journal.pbio.1002456 <i class='fas fa-external-link-alt' style="font-size:.75em;"></i></a></div>
+											<div class="article-type-line2">
+												<span class='label label-info-black' title="Reports new observations regarding a meta-research question.">Original - Meta-research</span>
+												
+											</div>
+											
+											<div class="transparency-line">
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/preregistered-plus-available.png' class='shrunk-20 transparent'>
+													<span class="toDisplayBadgePopupOneLinkPrereg popUpStyle">
+														<div style="min-width:200px;white-space:normal;">
+															<span class="transp-popup-main-heading">Preregistration</span>
+															<div class="prereg-type-text">Preregistered study design + analyses</div>
+															<a href="https://osf.io/2h6tf/" target="_blank"> <i class="ai ai-osf ai-2x small-icon"></i> <span style="font-size:10px;"> https://osf.io...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+														</div>
+													</span>	
+												</div>
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/materials-available.png' class='shrunk-20 transparent'>
+													<span class="toDisplayBadgePopupOneLink popUpStyle">
+														<div style="min-width:280px;white-space:normal;">
+															<span class="transp-popup-main-heading">Study Materials</span> <span style="font-size:10px;">(protected access; login required)</span>
+															<br>
+															<a href="https://www.diw.de/sixcms/detail.php?id=diw_01.c.558445.en#558277" target="_blank"> <span style="font-size:10px;"> https://www.diw.de...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+														</div>
+													</span>
+												</div>
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/data-available.png' class='shrunk-20 transparent'>
+													<span class="toDisplayBadgePopupOneLink popUpStyle">
+														<div style="min-width:280px;white-space:normal;">
+															<span class="transp-popup-main-heading">Data</span> <span style="font-size:10px;">(protected access; login required)</span>
+															<br>
+															<a href="https://www.diw.de/sixcms/detail.php?id=diw_01.c.558445.en#558277" target="_blank">  <span style="font-size:10px;"> https://www.diw.de...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+															
+														</div>
+													</span>
+												</div>
+												
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/code-available.svg' class='shrunk-22 transparent'>
+													<span class="toDisplayBadgePopupTwoLinks popUpStyle">
+														<div style="min-width:200px;white-space:normal;">
+															<span class="transp-popup-main-heading">Public Code</span>
+															<br>
+															<a href="https://osf.io/3nz7j/" target="_blank"> <i class="ai ai-osf ai-2x small-icon"></i> <span style="font-size:10px;"> https://osf.io/3...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+															<br>
+															<a href="http://figshare.com/articles/LeBel_2010_S_I_Data_and_syntax_/953183" target="_blank"> <i class="ai ai-figshare ai-2x small-icon"></i> <span style="font-size:10px;"> https://figshare...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+														</div>
+													</span>
+												</div>
+												
+												
+											</div>
+											
+											
+											
+											
+											<div class="more-button full-text" id="moreDiv-10.1177/1948550612448196">	
+												<button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect expand-button rotate" onclick="toggle_visibility('abstract-section-10.1177/1948550612448196', 'moreDiv-10.1177/1948550612448196');" title="Toggle abstract, key figures, peer-review info, and other details.">
+													 <i class="fa fa-chevron-down" style="color:grey;"></i>
+												</button>
+											</div>
+											
+											
+											
+										
+							</div>
+						</div>
+					
+</div>
+ <div class="container-fluid" style="display:inline-block;vertical-align:top;">
+					
+					<div class="demo-card-wide mdl-card mdl-shadow--2dp" id="10.3758/s13423-014-0757-4" style="margin-top:2px;">
+							<div class="mdl-card__supporting-text">
+											<div class='fulltextcomponent'>	
+												
+												<div class="impact-info"> <span  title="Preprint has been downloaded 73 times (as of December 20, 2018)"><i class="fas fa-download"></i> 73</span> <span style="margin-left:5px;" title="Preprint has been viewed 1,004 times (as of December 20, 2018)"><i class="fas fa-eye"></i> 1K</span> </div>
+												<a href='http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2435572' target='_blank' title='View preprint of this article.' class="preprint"><img src="../logos/author-logos/sprite-icons/SSRN-logo.png" class="SSRN-logo" style="margin-top:3px;"> preprint</a>
+												
+												
+											</div>
+											
+											<div class='article-title'>A series of meta-analytic tests of the efficacy of long-term psychoanalytic psychotherapy</div>
+											
+											<div class='author-text'>A Woll & F Schönbrodt <strong>(2018)</strong></div>
+											<div class='journal-text'>Under peer review</div> 
+											<div class="article-type-line2">
+												<span class='label label-info-pecan' title='Article reports a (traditional) meta-analysis of a target effect/phenomenon'>Reanalysis - Meta-analysis</span>
+												
+											</div>
+											<div class="transparency-line">
+												<a title="Preregistration information is not available"><img src="../logos/author-logos/sprite-icons/preregistered-unavailable.png" class="shrunk-20" style="opacity:.7;"></a>
+												
+												<a title="Data not available: Proprietary"><img src="../logos/author-logos/sprite-icons/data-unavailable-reason-given.png" class="shrunk-20"></a>
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/code-available.svg' class='shrunk-22 transparent'>
+													<span class="toDisplayBadgePopupOneLink popUpStyle">
+														<div style="min-width:200px;white-space:normal;">
+															<span class="transp-popup-main-heading">Public Code</span>
+															<br>
+															<a href="https://osf.io/3nz7j/" target="_blank"> <i class="ai ai-osf ai-2x small-icon"></i> <span style="font-size:10px;"> https://osf.io...</span> <i class="fas fa-external-link-alt"></i></a>
+															<div class="impact-info open-popup"> <span title="Public code files have been downloaded 56 times (as of December 15, 2018)"><i class="fas fa-download"></i> 56</span> <span title="Code has been viewed 1,862 times (as of December 15, 2018)" style="margin-left:5px;"><i class="fas fa-eye"></i> 2K</span></div>
+														</div>
+													</span>
+												</div>
+												<div style='display:inline;' class='popUpOnHover'>
+												   <img src='../logos/author-logos/sprite-icons/disclosure-available.png' class='shrunk-20 transparent'>
+												   <span class='toDisplayMARS popUpStyle' style='padding-left:5px;'>
+												   <span class='transp-popup-main-heading'>Reporting Standards</span><br>
+												   <span style='font-size:10px;font-weight:600;color:gray;'>Meta-analysis complies with the 
+												   <a href='http://www.apa.org/pubs/journals/releases/amp-amp0000191.pdf' target='_blank'>MARS (2018)</a> 
+												   <img src='../logos/author-logos/sprite-icons/disclosure-available.png' class='shrunk-16 transparent'> reporting standard: 
+												   <ul style='font-size:10px;line-height:normal;'>
+												   <li><a href='http://www.apa.org/pubs/journals/releases/amp-amp0000191.pdf' target='_blank'>
+												   APA's Meta-Analysis Reporting Standards (MARS; Table 9)</a> 
+												   </li></span>
+												   </ul>
+												   </span>
+												   </div>
+												
+											</div>
+											<div class="more-button full-text" id="moreDiv-10.3758/s13423-014-0757-4">	
+												<button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect expand-button rotate" onclick="toggle_visibility('abstract-section-10.3758/s13423-014-0757-4', 'moreDiv-10.3758/s13423-014-0757-4');" title="Toggle abstract, key figures, peer-review info, and other details.">
+													 <i class="fa fa-chevron-down" style="color:grey;" ></i>
+												</button>
+											</div>
+											
+											
+											
+										
+							</div>
+						</div>
+					
+					
+					
+					<div class='demo-card-wide mdl-card mdl-shadow--2dp'> <a class='anchor' id='10.12688/f1000research.9202.1'></a>
+                      <div class='mdl-card__supporting-text'>
+						<div class='fulltextcomponent'>	
+							<div class="impact-info">
+								<span title="Article/Preprint have been cited 20 times (as of December 15, 2018; Google Scholar)"><i class="fas fa-quote-right"></i> 20</span>
+								<span style="margin-left:7px;" title="Article PDF (postprint) has been downloaded 1,033 times (as of December 15, 2018)"><i class="fas fa-download"></i> 1K</span> 
+							</div> 
+							<a href="https://etiennelebel.com/documents/lebeletal(2018,ampss)a-unified-framework-to-quantify-the-credibility-of-scientific-findings.pdf" target="_blank" class="pdf" title="View PDF of this article (postprint).">pdf</a> 
+							
+							
+							<br>
+							<div class="impact-info" ><span title="HTML has been viewed 4,862 times (as of December 14, 2018)"><i class="fas fa-eye"></i> 5K</span> </div>
+							<div style="display:inline-block;margin-top:3px;">
+								<a href='http://journal.frontiersin.org/article/10.3389/fpsyg.2017.01004/full' target='_blank' title='View interactive HTML version of this article (postprint).' class="html"  style="margin-top:3px;">html</a>
+								
+							</div>
+							<br>
+							<div class="impact-info"> <span style="margin-left:5px;" title="Preprint has been downloaded 1,486 times (as of December 15, 2018)"><i class="fas fa-download"></i> 1.5K</span> 
+							<span title="Preprint has been viewed 3,862 times (as of December 14, 2018)"><i class="fas fa-eye"></i> 4K</span> 
+							</div>
+							
+							<a class="preprint" href='https://psyarxiv.com/uwmr8' target='_blank' title='View preprint of this article.'><i class="ai ai-osf ai-2x small-icon osf-purple-icon" style="margin-top:3px;"></i> preprint</a>
+							
+						</div>
+											
+                            <div class='article-title'>Does sadness impair color perception? Flawed evidence and faulty methods</div>
+                            <div class='author-text'>Holcombe, Brown, Goodbourn, Etz, & Geukes <strong>(2016)</strong></div>
+									          <div class='journal-text'>F1000</div> <div class='doi-dimmed'> <a href='https://dx.doi.org/10.12688/f1000research.9202.1' target='_blank' class='doi-dimmed grey'>10.12688/f1000research.9202.1 <i class='fas fa-external-link-alt' style="font-size:.75em;"></i></a></div>
+											  
+											  <div class='article-type-line2'>
+												
+												<div style="display:inline;" class="popUpOnHover">
+													<span class='label label-info-pecan' title='Article reports a robustness reanalysis of a previously published article (conducting different statistical analyses on existing data)'>Reanalysis - Reproducibility/Robustness</span>
+													<span class="toDisplayBadgePopupOneLink popUpStyle">
+														<div style="min-width:200px;white-space:normal;">
+															Article reports a robustness reanalysis of <a href="https://journals.sagepub.com/doi/10.1177/0956797615597672" target="_blank">Thorstenson, Pazda, & Elliot (2015)</a>
+														</div>
+													</span>
+												</div>
+												
+												
+												
+																   </div>
+											  <div class='transparency-line'><a title='Preregistration information is not available'><img src='../logos/author-logos/sprite-icons/preregistered-unavailable.png' 
+                  class='shrunk-20'></a><div style='display:inline;' class='popUpOnHover'>
+													<img src='../logos/author-logos/sprite-icons/data-available.png' class='shrunk-20 transparent'>
+                       <span class='toDisplayBadgePopupOneLink popUpStyle'>
+                       <div style='min-width:200px;white-space:normal;'>
+                       <span class='transp-popup-main-heading'>Public Data</span>
+                       <br>
+                       <a href="https://osf.io/sbhn9/files/" target="_blank"><i class="ai ai-osf ai-2x small-icon"></i> <span style="font-size:10px;"> https://osf.io...</span> <i class="fas fa-external-link-alt"></i></a>
+					   
+                       </div>
+                       </span>
+                       </div><div style='display:inline;' class='popUpOnHover'>
+													<img src='../logos/author-logos/sprite-icons/code-available.svg' class='shrunk-22 transparent'>
+													<span class='toDisplayBadgePopupOneLink popUpStyle'>
+														<div style='min-width:200px;white-space:normal;'>
+															<span class='transp-popup-main-heading'>Public Code</span>
+															<br>
+															<a href="https://osf.io/sbhn9/files/" target="_blank"><i class="ai ai-osf ai-2x small-icon"></i> <span style="font-size:10px;"> https://osf.io...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+														</div>
+													</span>
+												</div>
+												
+												</div>
+												
+												<div class='more-button full-text' id='moreDiv-10.12688/f1000research.9202.1' style='margin-top:4px;'>	
+    <button class='mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect expand-button rotate' 
+    onclick="toggle_visibility('abstract-section-10.12688/f1000research.9202.1', 'moreDiv-10.12688/f1000research.9202.1');" 
+    title='Toggle abstract, key figures, peer-review info, and other details.'>
+      <i class='fa fa-chevron-down' style="color:grey;"></i>
+        </button>
+        </div> <div class='addition-date-text'>Added: June 24, 2018</div>
+</div></div>
+				
+				
+				
+				<div class="demo-card-wide mdl-card mdl-shadow--2dp" id="10.1037/pspi0000106">
+							<div class="mdl-card__supporting-text">
+											<div class='fulltextcomponent' style="z-index:9998;">	
+												<div class="impact-info"><span style="margin-left:7px;" title="Article/Preprint have been cited 23 times (as of December 17, 2018; Google Scholar)"><i class="fas fa-quote-right"></i> 23</span> </div>
+												
+												<a href="https://etiennelebel.com/documents/lbcl(2017,jpsp).pdf" target="_blank" class="pdf" title="View PDF of this article (postprint).">pdf</a>
+												
+												
+												<br>
+												<div class="impact-info"> <span style="margin-left:5px;" title="Preprint has been downloaded 1,407 times (as of December 17, 2018)"><i class="fas fa-download"></i> 1.4K</span> </div>
+												
+												<a href='https://psyarxiv.com/dv94b/' target='_blank' title='View preprint of this article.' class="preprint"><i class="ai ai-osf ai-2x small-icon osf-purple-icon" style="margin-top:3px;"></i> preprint</a>
+											</div>
+											
+											<div class='article-title'>Falsifiability is not optional</div>
+											<div class='author-text'>EP LeBel, D Berger, L Campbell, & TJ Loving <strong>(2017)</strong></div>
+											
+											<div class='journal-text'>Journal of Personality and Social Psychology</div> <div class='doi-dimmed'> <a href='https://dx.doi.org/10.1037/pspi0000106' target='_blank' class='doi-dimmed grey'>10.1037/pspi0000106</a></div>
+											<div class="article-type-line2">
+												<span class='label label-info-teal-darker' title='Article involves a conceptual/theoretical contribution'>Conceptual</span>
+												
+											</div>
+											<div class="transparency-line">
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/code-available.svg' class='shrunk-22 transparent'>
+													<span class="toDisplayBadgePopupOneLink popUpStyle">
+														<div style="min-width:200px;white-space:normal;">
+															<span class="transp-popup-main-heading">Public Code</span>
+															<br>
+															<a href="https://osf.io/wp6an/" target="_blank"><i class="ai ai-osf ai-2x small-icon"></i> <span style="font-size:10px;"> https://osf.io...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+															
+															
+														</div>
+													</span>
+												</div>
+											</div>
+											
+											<div class="more-button full-text" id="moreDiv-10.1037/pspi0000106">	
+												<button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect expand-button rotate" onclick="toggle_visibility('abstract-section-10.1037/pspi0000106', 'moreDiv-10.1037/pspi0000106');" title="Toggle abstract, key figures, peer-review info, and other details.">
+													 <i class="fa fa-chevron-down" style="color:grey;"></i>
+												</button>
+											</div>
+											
+											
+										
+							</div>
+						</div>
+					
+				
+				
+						<div class="demo-card-wide mdl-card mdl-shadow--2dp" id="10.3389/fpsyg.2017.01004">
+							<div class="mdl-card__supporting-text">
+											<div class='fulltextcomponent'>	
+												<div class="impact-info"><span title="Article has been cited 3 times (as of December 14, 2018; Google Scholar)"><i class="fas fa-quote-right"></i> 3</span> </div> 
+												<a href="https://etiennelebel.com/documents/hf&l(2017,fip).pdf" target="_blank" class="pdf" title="View PDF of this article (postprint).">pdf</a>
+												
+												<br>
+												<div class="impact-info" ><span title="HTML has been viewed 4,862 times (as of December 14, 2018)"><i class="fas fa-eye"></i> 5K</span> </div>
+												<div style="display:inline-block;margin-top:3px;">
+													<a href='http://journal.frontiersin.org/article/10.3389/fpsyg.2017.01004/full' target='_blank' title='View interactive HTML version of this article (postprint).' class="html"  style="margin-top:3px;">html</a>
+													
+												</div>
+												<br>
+												<div class="impact-info"> <span style="margin-left:5px;" title="Preprint has been downloaded 268 times (as of December 14, 2018)"><i class="fas fa-download"></i> 268</span> </div>
+												<a href='https://osf.io/6b95w/' target='_blank' title='View preprint of this article.' class="preprint"><i class="ai ai-osf ai-2x small-icon osf-purple-icon" style="margin-top:3px;"></i> preprint</a>
+												
+												
+											</div>
+											
+											
+											<div class='article-title'>Complex phenomena require sophisticated designs: Why we shouldn't give up on replicability</div>
+											<div class='author-text'>M Heino, EI Fried, & EP LeBel <strong>(2017)</strong></div>
+											<div class='journal-text'>Frontiers in Psychology</div> <div class='doi-dimmed'> <a href='https://dx.doi.org/10.3389/fpsyg.2017.01004' target='_blank' class='doi-dimmed grey'>10.3389/fpsyg.2017.01004 <i class='fas fa-external-link-alt' style="font-size:.75em;"></i></a></div>
+											<div class="article-type-line2">
+												
+												<div style="display:inline;" class="popUpOnHover">
+													<span class='label label-info-commentary' title='Article is a commentary on previous research' >Commentary</span>
+													<span class="toDisplayBadgePopupOneLink popUpStyle">
+														<div style="min-width:200px;white-space:normal;">
+															Article is a commentary on <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2017.00879/full" target="_blank">Iso-Ahola (2017)</a>
+														</div>
+													</span>
+												</div>
+												
+												
+											</div>
+										
+										
+											<div class="more-button full-text" id="moreDiv-10.3389/fpsyg.2017.01004">	
+												<button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect expand-button rotate" onclick="toggle_visibility('abstract-section-10.3389/fpsyg.2017.01004', 'moreDiv-10.3389/fpsyg.2017.01004');" title="Toggle abstract, key figures, peer-review info, and other details." style="margin-top:2px;">
+													 <i class="fa fa-chevron-down" style="color:grey;"></i>
+												</button>
+											</div>
+											
+											
+										
+							</div>
+						</div>
+					
+				
+				
+							
+						
+							
+		
+			
+</div>	
+
+	<script type="text/javascript" language="javascript">
+		jQuery(function () {
+			jQuery(".demo-card-wide").hover(function () {
+				jQuery('.journal-text', this).addClass("changeJournalOpacity");
+				jQuery('.target-effects', this).addClass("changeEffectOpacity");
+				jQuery('.label', this).addClass("changeLabelOpacity");
+				jQuery('.transparent', this).addClass("changeBadgeOpacity");
+				jQuery('.media-attention-line', this).addClass("changeMediaAttentionOpacity");
+				jQuery('.article-title', this).addClass("changeArticleTitleOpacity");
+				jQuery('.author-text', this).addClass("changeAuthorOpacity");
+				jQuery('.full-text', this).addClass("changeFullTextOpacity");
+				jQuery('.secondary-link', this).addClass("changeSecondaryLinkOpacity");
+				jQuery('.doi-dimmed', this).addClass("changeDOIOpacity");
+				jQuery('.impact-info', this).addClass("changeImpactInfoOpacity");
+				jQuery('.sharing-links', this).addClass("changeSharingLinksOpacity");
+				jQuery('.abstractText', this).addClass("changeAbstractColor");
+				jQuery('.secondary-section-on-hover', this).addClass("changeSecondarySectionOpacity");
+			  }, function () {
+				jQuery('.journal-text', this).removeClass("changeJournalOpacity");
+				jQuery('.target-effects', this).removeClass("changeEffectOpacity");
+				jQuery('.label', this).removeClass("changeLabelOpacity");
+				jQuery('.transparent', this).removeClass("changeBadgeOpacity");
+				jQuery('.media-attention-line', this).removeClass("changeMediaAttentionOpacity");
+				jQuery('.article-title', this).removeClass("changeArticleTitleOpacity");
+				jQuery('.author-text', this).removeClass("changeAuthorOpacity");
+				jQuery('.full-text', this).removeClass("changeFullTextOpacity");
+				jQuery('.secondary-link', this).removeClass("changeSecondaryLinkOpacity");
+				jQuery('.doi-dimmed', this).removeClass("changeDOIOpacity");
+				jQuery('.impact-info', this).removeClass("changeImpactInfoOpacity");
+				jQuery('.sharing-links', this).removeClass("changeSharingLinksOpacity");
+				jQuery('.abstractText', this).removeClass("changeAbstractColor");
+				jQuery('.secondary-section-on-hover', this).removeClass("changeSecondarySectionOpacity");
+			  });
+			});
+		jQuery(function () {
+			jQuery(".secondary-section").hover(function () {
+				
+			  }, function () {
+				
+			  });
+			});
+	</script>
+	
+	<script type="text/javascript">
+	function toggle_visibility(id, moreDivID) {
+       var e = document.getElementById(id);
+	   var moreDiv = document.getElementById(moreDivID);
+       if(e.style.display == 'block') {
+          e.style.display = 'none';  
+		  moreDiv.style.cssFloat = "none";
+		  moreDiv.style.textAlign = "center"; }
+       else {
+          e.style.display = 'block';
+		  moreDiv.style.cssFloat = "right"; }
+    }
+  </script>
+  
+   
+  
+  
+	
+ 
+ <script>
+	function openImg(imgName) {
+	  var i, x;
+	  x = document.getElementsByClassName("picture");
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	  }
+	  document.getElementById(imgName).style.display = "inline-block";
+	}
+</script>
+ 
+  
+  <script type="text/javascript">
+  $(".rotate").click(function(){
+	 $(this).toggleClass("up")  ; 
+	})
+  </script>
+	
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
+	
+	<script type="text/javascript" language="javascript">
+	$('[data-fancybox="images"]').fancybox({
+	// Options will go here
+	thumbs : {
+		autoStart : false
+	},
+	buttons : [ 
+		'share',
+		'fullScreen',
+		'thumbs',
+		'close'
+	  ]
+	});
+	$.fancybox.defaults.loop = "true";
+	</script>
+	
+	<script type="text/javascript" language="javascript">
+	jQuery(function(){
+		var minimized_elements = $('div.minimize');
+		minimized_elements.each(function(){    
+			var t = $(this).text();        
+			if(t.length < 435) return;
+			$(this).html(
+				t.slice(0,435)+'<span>... </span><a href="#" class="more">More</a>'+
+				'<span style="display:none;">'+ t.slice(435,t.length)+' <a href="#" class="less">Less</a></span>'
+			);
+		}); 
+		$('a.more', minimized_elements).click(function(event){
+			event.preventDefault();
+			$(this).hide().prev().hide();
+			$(this).next().show();        
+		});
+		$('a.less', minimized_elements).click(function(event){
+			event.preventDefault();
+			$(this).parent().hide().prev().show().prev().show();    
+		});
+	});
+	jQuery(function(){
+		var minimized_elements = $('div.minimizeAC');
+		minimized_elements.each(function(){    
+			var t = $(this).text();        
+			if(t.length < 80) return;
+			$(this).html(
+				'<strong>Author Contributions:</strong> '+t.slice(0,80)+'<span>... </span><a href="#" class="more">More</a>'+
+				'<span style="display:none;">'+ t.slice(80,t.length)+' <a href="#" class="less">Less</a></span>'
+			);
+		}); 
+		$('a.more', minimized_elements).click(function(event){
+			event.preventDefault();
+			$(this).hide().prev().hide();
+			$(this).next().show();        
+		});
+		$('a.less', minimized_elements).click(function(event){
+			event.preventDefault();
+			$(this).parent().hide().prev().show().prev().show();    
+		});
+	});
+	</script>
+	
+	
+	
+		
+		
+	
+	
+</div> <!--main-container div -->
+
+
+
+
+
+	
+	
+	
+  
+  <script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-48865749-1', 'auto');
+	  ga('send', 'pageview');
+  </script>
+  
+
+  </body>
+</html>
