@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="google-site-verification" content="7CrO9Y_velY8TjF6s8CWKB1s2S8TGRdQ8NoZ-gHPDE0" />
+  <meta http-equiv="Cache-control" content="public">
+  <title itemprop='name'>Curate Science - EP LeBel</title>
+  <meta name="description" content="Curate Science is a platform to crowdsource the credibility of scientific research by curating its transparency, analytic reproducibility, analytic robustness, and replicability." />
+  <meta name="keywords" content="replication, replications, direct replication, conceptual replication, replicability, generalizability, analytic reproducibility, analytic robustness, research credibility, credibility of findings, sufficient transparency, open science, sufficient falsifiability, falsification, cumulative knowledge" />
+  
+  
+	<link rel="icon" type="image/png" href="../logos/author-logos/CS-snail-icon.png">
+	<link rel="apple-touch-icon" type="image/png" href="../logos/author-logos/CS-snail-icon.png">
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../assets/author-assets/fonts.css" media="screen" />
+	
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="../assets/author-assets/text-stylings-author-page_transparent-labels.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
+	
+	
+   <style>
+	<!--temp place for troubleshooting style issues-->
+	
+
+	
+.article-type-line2 { 
+	margin-top:2px;
+	margin-bottom:5px; }
+
+.secondary-link2 {
+	margin-top:5px;
+	font-size:10px;
+	line-height:15px;
+	display:inline-block;
+	opacity:0.5;
+	filter: alpha(opacity=50); } /* For IE8 and earlier */
+.video-icon2 {
+	text-indent:0px;
+	color: #686256;
+	top:4px;
+	font-size: 2rem;
+	margin-top:2px;
+	margin-left:1px;
+}
+.mdl-shadow--2dp { box-shadow:none;}
+.demo-card-wide.mdl-card:hover { box-shadow:none;}
+a.pdf:link, a.pdf:visited, a.pdf:active {color: red; }
+a.pdf:hover { text-decoration: underline !important;}
+a.html:link, a.html:visited, a.html:active {color: black; }
+a.html:hover { text-decoration: underline !important;}
+a.preprint:link, a.preprint:visited, a.preprint:active {color: purple; }
+a.preprint:hover { text-decoration: underline !important;}
+.fulltextcomponent {
+	float:right;
+	text-align:right;
+	padding:4px;
+}
+.peer-review-info { margin-top:3px; }
+.funding-sources-info {margin-top:2px;}
+.competing-interests-info {margin-top:2px;}
+.author-contributions { margin-top:2px; }
+.author-text {
+	/*color:#009933;*/
+	/*color:#666666; testing gray color*/
+	color:#037529c4;
+	font-size:12px;
+	line-height:14px;
+	margin-top:3px;
+	opacity:.7;
+	pointer-events: none; /*needed to fix weird issue where author-text div preventing fulltext button hyperlink from working */
+	}
+.journal-text {
+	color:#999999;
+	font-style:italic;
+	font-size:12px;
+	line-height:14px;
+	display:inline-block;
+	opacity:.55; 
+	margin-top:0px;
+	margin-right:2px;}
+.grey {
+	opacity:.4;
+	font-size:12px;
+	line-height:14px;
+}
+.toDisplayBasic7Retroactive {
+	display:none;
+	position:absolute; 		
+	z-index:9998;
+	border:1px;
+	background-color:white;
+	border-style:solid;
+	border-width:1px;
+	border-color:darkgrey;
+	padding:3px;
+	top:-115px; 
+	left:-100px;
+	font-size:6px;
+	min-width:440px;}
+.toDisplayRepDetails {
+	display:none;
+	position:absolute; 		
+	z-index:9998;
+	border:1px;
+	background-color:white;
+	border-style:solid;
+	border-width:1px;
+	border-color:darkgrey;
+	padding:3px;
+	top:-65px; 
+	left:5px;
+	min-width:250px;
+	max-width:300px;}
+.popUpOnHover:hover span.toDisplayCitationPopup { display:block; }
+.toDisplayCitationPopup {
+	display:none;
+	position:absolute; 		
+	z-index:9998;
+	border:1px;
+	background-color:white;
+	border-style:solid;
+	border-width:1px;
+	border-color:darkgrey;
+	padding:3px;
+	top:-133px; 
+	left:-95px;
+	min-width:250px;
+	max-width:300px;}
+.container-fluid {
+	max-width:680px;
+	background-color:white;
+	padding-left:35px;
+	padding-right:35px;
+}
+.badge-repnum {
+	padding-left:2px;
+	padding-right:2px;
+	padding-top:1px;
+	padding-bottom:1px;
+	border-radius:3px;
+	line-height:8px;
+	border: .5px solid #e0e0e0;
+}
+.doi-dimmed {
+	opacity: 0.3;
+	filter: alpha(opacity=30); /* For IE8 and earlier */
+	font-size:12px; 
+	line-height:15px;
+	display:inline-block;}
+.impact-info {
+	display:inline-block;
+	font-size:11px;
+	color:lightgrey;
+	opacity:.8;
+	margin-right:2px;
+	vertical-align:middle; }	
+.secondary-section-on-hover { opacity:.8; }
+.fulltextcomponent {
+	float:right;
+	text-align:right;
+	padding:2px;
+	position:relative;
+	z-index:999;
+}
+  </style>
+
+</head>
+
+<body style="background-color:whitesmoke;">
+
+
+
+
+ <div class="container-fluid" >
+	
+		<div class="demo-card-wide mdl-card mdl-shadow--2dp" id="10.1177/2515245918787489" style="margin-top:2px;margin-left:-12px;">
+							<div class="mdl-card__supporting-text">
+											<div class='fulltextcomponent'>	
+												<div class="impact-info">
+													<span title="Article/Preprint have been cited 20 times (as of December 15, 2018; Google Scholar)"><i class="fas fa-quote-right"></i> 20</span>
+													<span style="margin-left:7px;" title="Article PDF (postprint) has been downloaded 1,033 times (as of December 15, 2018)"><i class="fas fa-download"></i> 1K</span>
+													<span style="margin-left:4px;" title="Full-text of article (HTML) has been viewed 3,862 times (as of December 14, 2018)"><i class="fas fa-eye"></i> 4K</span> 													
+												</div> 
+												<a href="https://etiennelebel.com/documents/lebeletal(2018,ampss)a-unified-framework-to-quantify-the-credibility-of-scientific-findings.pdf" target="_blank" class="pdf" title="View PDF of this article (postprint)." style="margin-right:-4px;">pdf <i class="fas fa-external-link-alt" style="font-size:.75em;"></i></a> 
+												
+												
+												<br>
+												<div class="impact-info"> <span style="margin-left:5px;" title="Preprint has been downloaded 1,486 times (as of December 15, 2018)"><i class="fas fa-download"></i> 1.5K</span> 
+												<span style="margin-left:4px;" title="Preprint has been viewed 3,862 times (as of December 14, 2018)"><i class="fas fa-eye"></i> 4K</span> 
+												</div>
+												
+												<a class="preprint" href='https://psyarxiv.com/uwmr8' target='_blank' title='View preprint of this article.'><i class="ai ai-osf ai-2x small-icon osf-purple-icon" style="margin-top:3px;"></i> preprint <i class="fas fa-external-link-alt" style="font-size:.75em;"></i></a>
+												
+											</div>
+											
+											<div class='article-title'>Registered Replication Report of Finkel, Rusbult, Kumashiro, & Hannon's (2002) Study 1</div>
+											<div class='author-text'>I Cheung, L Campbell, EP LeBel, ... , & JC Yong <strong>(2016)</strong> </div>
+										
+										
+											<div class='journal-text'>Perspectives on Psychological Science</div> <a href="https://dx.doi.org/10.1177/1745691616664694" class="JournalDOIBadge-doi-341" target="_blank" style="color:lightgrey;"><i class="ai ai-doi ai-2x" style="margin-top:-3px;margin-left: 3px;font-size:1em;"></i> </a>
+											
+											<div class="article-type-line2">
+												<div style="display:inline;" class="popUpOnHover">
+													<span class="label label-info-brown">Replication <span class="badge badge-repnum ">16</span></span> 
+													<span class="toDisplayRepDetails popUpStyle">
+														<span style="font-size:12px;">Article reports 16 replications of <a>Finkel et al.'s (2002) Study 1</a> 'commitment boosts forgiveness' effect.</span>
+														<br><br>
+														<span style="font-size:10px;color:gray;">A replication is a study that uses a methodology that is 'close' or 'very close' to a previous study (see <a href="http://curatescience.org/logos/replication-taxonomy-v4_small.png" target="_blank">replication taxonomy</a> for details).</span>
+													</span>
+												</div>
+												
+												<span class='label label-info-red' title='Article is a Registered Report (methods are peer-reviewed and preregistered prior to data collection).'>Registered Report</span>
+												
+											</div>
+											
+											<div class="transparency-line">
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/preregistered-plus-available.png' class='shrunk-20 transparent'>
+													<span class="toDisplayBadgePopupOneLinkPrereg popUpStyle">
+														<div style="min-width:200px;white-space:normal;">
+															<span class="transp-popup-main-heading">Preregistration</span>
+															<div class="prereg-type-text">Preregistered study design + analyses</div>
+															<a href="https://osf.io/2h6tf/" target="_blank"> <i class="ai ai-osf ai-2x small-icon"></i> <span style="font-size:10px;"> https://osf.io...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+														</div>
+													</span>	
+												</div>
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/materials-available.png' class='shrunk-20 transparent'>
+													<span class="toDisplayBadgePopupOneLink popUpStyle">
+														<div style="min-width:200px;white-space:normal;">
+															<span class="transp-popup-main-heading">Public Study Materials</span>
+															<br>
+															<a href="https://osf.io/knfy4/" target="_blank"><i class="ai ai-osf ai-2x small-icon"></i> <span style="font-size:10px;"> https://osf.io...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+														</div>
+													</span>
+												</div>
+												<div style="display:inline;" class="popUpOnHover">
+													<img src='../logos/author-logos/sprite-icons/data-available.png' class='shrunk-20 transparent'>
+													<span class="toDisplayBadgePopupOneLink popUpStyle">
+														<div style="min-width:200px;white-space:normal;">
+															<span class="transp-popup-main-heading">Public Data</span>
+															<br>
+															<a href="https://osf.io/3nz7j/" target="_blank"> <i class="ai ai-osf ai-2x small-icon"></i> <span style="font-size:10px;"> https://osf.io...</span> <i class="fas fa-external-link-alt"></i></a>
+															
+															
+														</div>
+													</span>
+												</div>
+												
+												<div style='display:inline;' class='popUpOnHover'>
+													<img src='../logos/author-logos/sprite-icons/code-available.svg' class='shrunk-22 transparent'>
+													<span class='toDisplayBadgePopupOneLink popUpStyle'>
+														<div style='min-width:280px;white-space:normal;'>
+															<span class='transp-popup-main-heading'>Public Code</span>
+															<br>
+															<a href='https://codeocean.com/2018/04/19/code-for-colon-self-esteem-relationship-threat-and-dependency-regulation-colon-independent-replication-of-murray-rose-bellavia-holmes-and-kusche-lpar-2002-rpar-study-3/code' target='_blank'> 
+															<img src="../logos/author-logos/code-ocean-icon.png" width="15">
+															<span style="font-size:10px;"> https://codeocean...</span>
+															<i class='fas fa-external-link-alt'></i></a>
+															
+															
+															
+														</div>
+													</span>
+												</div>
+												
+												<div style="display:inline;" class="popUpOnHover">
+													<img src="../logos/author-logos/sprite-icons/disclosure-available.png" class="shrunk-20 transparent">
+													<span class="toDisplayBasic4Submission popUpStyle" style="padding-left:5px;text-indent:0px;white-space:nowrap;">
+														<span class="transp-popup-main-heading">Reporting Standards</span>
+														<br>
+														<span style="font-size:10px;font-weight:600;color:gray;">Study complies with the <a href="https://www.psychologicalscience.org/publications/psychological_science/ps-submissions#DISC" target="_blank">Basic 4 (at submission, PSCI, 2014)</a> <img src="../logos/author-logos/sprite-icons/disclosure-available.png" class="shrunk-16 transparent"> reporting standard:</span>
+														<ol >
+															<li><strong>Excluded data (subjects/observations):</strong> Full details reported in article.</li>
+															<li><strong>Experimental conditions:</strong> Full details reported in article.</li>
+															<li><strong>Outcome measures:</strong> Full details reported in article.</li>
+															<li><strong>Sample size determination:</strong> Full details reported in article.</li>
+														</ol>
+														
+													</span>
+												</div>
+												<div style='display:inline;' class='popUpOnHover'>
+												   <span class='label label-info-commentaries' >Commentaries <span class='badge badge-repnum'>1</span></span> 
+												   <span class='toDisplayCommentaries popUpStyle' style='padding-left:5px;white-space:nowrap;'>
+												   Commentaries about this article: 
+												   <ul style="font-size:12px;"><li><a href='https://static1.squarespace.com/static/56c0eeaa7c65e465b5050feb/t/5804396dbe6594564b28c24b/1476671855511/2016_Finkel_PPS.pdf' target='_blank'>Finkel (2016)</a></li></ul></span>
+												</div>
+												
+											</div>
+											<div class="abstractText minimize" style="font-size:13px;line-height:15px;margin-top:7px;">
+													Societies invest in scientific studies to better understand the world and attempt to harness such improved understanding to address pressing societal problems. Published research, however, can be useful for theory or application only if it is credible. In science, a credible finding is one that has repeatedly survived risky falsification attempts. However, state-of-the-art meta-analytic approaches cannot determine the credibility of an effect because they do not account for the extent to which each included study has survived such attempted falsification. To overcome this problem, we outline a unified framework for estimating the credibility of published research by examining four fundamental falsifiability-related dimensions: (a) transparency of the methods and data, (b) reproducibility of the results when the same data-processing and analytic decisions are reapplied, (c) robustness of the results to different data-processing and analytic decisions, and (d) replicability of the effect. This framework includes a standardized workflow in which the degree to which a finding has survived scrutiny is quantified along these four facets of credibility. The framework is demonstrated by applying it to published replications in the psychology literature. Finally, we outline a Web implementation of the framework and conclude by encouraging the community of researchers to contribute to the development and crowdsourcing of this platform.
+													
+												</div>
+												<div class="key-words" style="margin-top:-4px;margin-bottom:5px;>
+													<span class="mdl-chip small-chip">      
+														<span class="mdl-chip__text small-chip-text">research credibility</span>
+													</span>
+													<span class="mdl-chip small-chip">      
+														<span class="mdl-chip__text small-chip-text">transparency</span>
+													</span>
+													<span class="mdl-chip small-chip">      
+														<span class="mdl-chip__text small-chip-text">open science </span>
+													</span>
+													<span class="mdl-chip small-chip">      
+														<span class="mdl-chip__text small-chip-text">analytic reproducibility </span>
+													</span>
+													<span class="mdl-chip small-chip">      
+														<span class="mdl-chip__text small-chip-text">analytic robustness </span>
+													</span>
+													<span class="mdl-chip small-chip">      
+														<span class="mdl-chip__text small-chip-text">replicability </span>
+													</span>
+												</div>
+												<p class="imglist">
+												  
+												  <a href="../logos/author-logos/figures/lmeev2018-figure-2.png" data-fancybox="images" data-caption="LeBel, McCarthy, Earp, Elson, & Vanpaemel (2018) - Figure 2">
+													<img src="../logos/author-logos/figures/lmeev2018-figure-2.png" width="85px" height="85px;" style="object-fit:cover;"/>
+												  </a>
+												  
+												<a data-fancybox="images" data-type="iframe" data-src="https://plot.ly/~RPlotBot/3913.embed" style="cursor:pointer;"></ href="javascript:;">
+													<img src="../logos/author-logos/figures/life-expectancy-thumbnail.png" width="85px" height="85px;" style="object-fit:cover;"/>
+												  </a>
+												  <a data-fancybox="images" data-type="iframe" data-src="https://plot.ly/~RhettAllain/131.embed" style="cursor:pointer;"></ href="javascript:;">
+													<img src="../logos/author-logos/figures/song-length-thumbnail.png" width="85px" height="85px;" style="object-fit:cover;"/>
+												  </a>
+												   <a href="https://popperfont.files.wordpress.com/2012/11/solarsystem.gif" data-fancybox="images" data-caption="LeBel, Berger, Campbell, & Loving (2017) - Figure 4">
+													<img src="https://popperfont.files.wordpress.com/2012/11/solarsystem.gif" width="85px" height="85px;" style="object-fit:cover;"/>
+												  </a>
+												  <a href="https://www.youtube.com/watch?v=YQGOpCCatvU" data-fancybox="images" data-caption="LeBel, McCarthy, Earp, Elson, & Vanpaemel (2018) - Video 1">
+													<img src="../logos/author-logos/figures/video1thumb_.png" width="95px" title="Video related to this paper.">
+												  </a>
+												  
+												 
+												  
+												</p>
+											<div class="more-button full-text" id="moreDiv-10.1177/2515245918787489" >	<span style="font-size:12px;color:lightgrey;">Secondary Transparency</span>
+												<button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect expand-button rotate" onclick="toggle_visibility('abstract-section-10.1177/2515245918787489', 'moreDiv-10.1177/2515245918787489');" title="Toggle abstract, key figures, peer-review info, and other details.">
+													 <i class="fa fa-chevron-down" style="color:grey;" ></i>
+												</button>
+											</div>
+											<div id="abstract-section-10.1177/2515245918787489" class="abstract-section" style="display:none;">
+												
+												<div class="secondary-section">
+													<div class="secondary-section-on-hover" >
+														<div class="author-contributions minimizeAC">E. P. LeBel conceived the general idea, drafted and revised the manuscript, created the figures, and executed the analytic-reproducibility checks and meta-analyses for the application of the framework to the infidelity-distress effect. W. Vanpaemel provided substantial contributions to the conceptual development of the ideas presented. W. Vanpaemel, R. J. McCarthy, B. D. Earp, and M. Elson provided critical commentary and made substantial contributions to writing and revising the manuscript. All authors approved the final submitted version of the manuscript.
+														</div>
+														<div class="competing-interests-info">
+															<strong title="Competing commercial or financial interests.">Competing interests</strong>: EP LeBel is founder and lead of Curate Science, a platform to label and link the...<a>More</a>
+														</div>
+														<div class="funding-sources-info">
+															<strong>Funding sources</strong>: <span title="Digital Society research program">Ministry of Culture and Science millenium grant to support viewpoint diversity and...<a>More</a></span>
+														</div>
+														<div class="peer-review-info">
+															<strong>Editor</strong>: <span style="color:#009933;">S Vazire</span> &nbsp;&nbsp;<strong>Reviewers</strong>: <span style="color:#009933;">Anonymous reviewer 1, Anonymous reviewer 2, Anonymous reviewer 3, Anonymous reviewer 4 </span>
+															<div class='open-peer-review'>
+      <a href='http://s3-eu-west-1.amazonaws.com/ubiquity-partner-network/ucp/journal/collabra/PR-Collabra-24.pdf' target='_blank'> Open peer review <i class='fas fa-external-link-alt' style="font-size:.75em;"></i></a>
+      </div>
+														</div>
+														
+														<div class="secondary-link2">
+															<a href="https://www.youtube.com/watch?v=WBjhxjWDiHw" target="_blank" title="Video related to this paper." class="grey"><span class="glyphicon glyphicon-facetime-video video-icon2"></span></a> 
+															<a href="https://osf.io/f2er9/" target="_blank" title="Presentation/poster slides related to this paper." class="grey"><img src="../logos/author-logos/sprite-icons/slide-icon.png" class="slide-icon"></a>
+															<a href="https://osf.io/gpu3a/" target="_blank" style="margin-left:5px;">Suppl. Materials #1</a>  
+															<div style="color:black;">News coverage: <a href="http://www.nytimes.com/2015/08/28/science/many-social-science-findings-not-as-strong-as-claimed-study-says.html?action=click&contentCollection=science&region=rank&module=package&version=highlights&contentPlacement=1&pgtype=sectionfront&_r=1" target="_blank">NYT</a> &#8226; <a href="https://inews.co.uk/essentials/news/science/smart-doesnt-stop-prejudiced-just-changes-prejudices/" target="_blank">iNews</a> </div>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+											
+											
+										
+							</div>
+						</div>
+
+		<div class="widget-container" style="margin-bottom:50px;">
+			 	
+			
+			<div style="line-height:22px;">There is growing consensus that psychology has a replicability “crisis of confidence” [70, 69, 89, 66, 67], stemming from the fact that a growing number of findings cannot be replicated via high-powered independent replication attempts that duplicate the original methodology as closely as possible. Across all areas of psychology, there is a growing list of (prominent) findings that have not held up to independent replication attempts, including findings from cognitive psychology (retrieval-induced forgetting [54]; eye movements on recall [56]; temporal judgments [55]; protection effect [99]; mental simulation 108]; Mozart effect [95, 96]), developmental psychology (synesthetic cross-modality correspondence [49]), neurophysiology (vestibular stimulation [48]), industrial/organizational psychology (utility biasing effect on selection procedures [13]), positive psychology (weather effects on life satisfaction [81]), political psychology (self-prophecy effect on voting [92]; status-legitimacy hypothesis [10]), moral psychology (“Macbeth effect” [19]), educational psychology (stereotype threat on female math performance [28, 37]), color influence on exam performance [97]), evolutionary psychology (fertility on face preferences [30]; ovulation on men’s testosterone [<div style="display:inline;" class="popUpOnHover"><a>76</a><span class="toDisplayCitationPopup popUpStyle" style="padding-left:5px;text-indent:0px;min-width:400px;">
+										<div class='fulltextcomponent'>	
+												<div class="impact-info"><span title="Article has been cited 10 times (as of December 20, 2018; Google Scholar)"><i class="fas fa-quote-right"></i> 10</span> </div>
+												<a href="https://pdfs.semanticscholar.org/2efa/704dceea02d0df34a1bb53c8e4eca62fb612.pdf" target="_blank" class="pdf" title="View PDF of this article (postprint).">pdf <i class="fas fa-external-link-alt" style="font-size:.75em;"></i></a>
+											</div>
+											<div class='article-title'>Men smelling women: Null effects of exposure to ovulatory sweat on men’s testosterone</div>
+											<div class='author-text'>JR Roney & ZL Simmons <strong>(2012)</strong></div>
+										
+										
+											<div class='journal-text'>Evolutionary Psychology</div><a href="https://dx.doi.org/10.1177/147470491201000404" class="JournalDOIBadge-doi-341" target="_blank" style="color:lightgrey;"><i class="ai ai-doi ai-2x" style="margin-top:-3px;vertical-align: bottom;margin-left: 3px;font-size:1em;"></i> <span class="material-icons MuiIcon-root-266 MuiIcon-fontSizeInherit-272" aria-hidden="true" style="margin-bottom:-2px;margin-left:-2px;font-size:1em;">open_in_new</span></a>
+											<div class="article-type-line2">
+												<span class="label label-info-brown">Replication <span class="badge badge-repnum ">1</span></span> 
+												
+											</div>
+											<div class="transparency-line">
+												<a title="Preregistration information is not available"><img src="../logos/author-logos/sprite-icons/preregistered-unavailable.png" class="shrunk-20" style="opacity:.7;"></a>
+												<img src='../logos/author-logos/sprite-icons/materials-available.png' class='shrunk-20 transparent'>
+												<img src='../logos/author-logos/sprite-icons/data-available.png' class='shrunk-20 transparent'>
+												
+												<img src='../logos/author-logos/sprite-icons/code-available.svg' class='shrunk-22 transparent'>
+													
+												<div style="display:inline;" class="popUpOnHover">
+													<img src="../logos/author-logos/sprite-icons/disclosure-available.png" class="shrunk-20 transparent">
+													
+												</div>
+											</div>
+											
+				
+				</span></div>]; sex differences in infidelity distress [35]), judgment & decision making (unconscious thought advantage [63]; choice-overload [78]), and social cognition (e.g., “social priming”/embodiment findings [38, 17, 51, 18, 31, 57, 72, 71, 94, 44, 46, 52, 34]).
+			</div>
+			<div style="line-height:22px;margin-top:15px;">
+			More generalizable evidence supporting a general replicability problem comes from an ambitious and unprecedented large-scale crowdsourced project, the Reproducibility Project [66, 67]. In this project, researchers were unable to replicate about 60% (out of 100) of findings from the 2008 issues of Psychological Science, Journal of Personality and Social Psychology, and Journal of Experimental Psychology: Learning, Memory, and Cognition [68].  In another large-scale meta-scientific investigation, about 70% (16 out of 23) of important findings from cognitive and social psychology could also not be replicated [64]. Though there are different ways to interpret successful versus unsuccessful replication results [91], taken together, these observations strongly suggest psychology currently has a general replicability problem (as do several other areas of science including cancer cell biology and cardiovascular health literatures [8, 75]).
+			</div>
+			<div style="line-height:22px;margin-top:15px;">
+			<div style="font-size:15px;font-weight:bold;margin-bottom:5px;">New Initiatives and Reforms</div>
+			Several new initiatives have been launched to improve research practices in order to increase the reliability of findings in psychology. For instance, higher reporting standards have recently been instituted at several prominent psychology journals [21, 87, 88, 47]. At such journals (e.g., Psychological Science, Memory & Cognition, Attention, Perception, & Psychophysics, Psychonomic Bulletin & Review, Personality and Social Psychology Bulletin, Social Psychological & Personality Science), authors submitting a manuscript must now acknowledge that they have disclosed basic methodological details critical for the accurate evaluation and interpretation of reported findings such as fully disclosing all excluded observations, all tested experimental conditions, all assessed outcome measures, and their data collection termination rule. ...
+			</div>
+	</div>
+</div>
+					
+								
+				
+				
+				
+						
+		
+			
+	
+
+	<script type="text/javascript" language="javascript">
+		jQuery(function () {
+			jQuery(".demo-card-wide").hover(function () {
+			
+			  }, function () {
+				
+			  });
+			});
+		jQuery(function () {
+			jQuery(".secondary-section").hover(function () {
+				
+			  }, function () {
+				
+			  });
+			});
+	</script>
+	
+	<script type="text/javascript">
+	function toggle_visibility(id, moreDivID) {
+       var e = document.getElementById(id);
+	   var moreDiv = document.getElementById(moreDivID);
+       if(e.style.display == 'block') {
+          e.style.display = 'none';  
+		  moreDiv.style.cssFloat = "none";
+		  moreDiv.style.textAlign = "center"; }
+       else {
+          e.style.display = 'block';
+		   }
+    }
+  </script>
+  
+  
+  
+  <script type="text/javascript">
+  $(".rotate").click(function(){
+	 $(this).toggleClass("up")  ; 
+	})
+  </script>
+	
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
+	
+	<script type="text/javascript" language="javascript">
+	$('[data-fancybox="images"]').fancybox({
+	// Options will go here
+	thumbs : {
+		autoStart : false
+	},
+	buttons : [ 
+		'share',
+		'fullScreen',
+		'thumbs',
+		'close'
+	  ]
+	});
+	$.fancybox.defaults.loop = "true";
+	</script>
+	
+	<script type="text/javascript" language="javascript">
+	jQuery(function(){
+		var minimized_elements = $('div.minimize');
+		minimized_elements.each(function(){    
+			var t = $(this).text();        
+			if(t.length < 550) return;
+			$(this).html(
+				t.slice(0,550)+'<span>... </span><a href="#" class="more">More</a>'+
+				'<span style="display:none;">'+ t.slice(550,t.length)+' <a href="#" class="less">Less</a></span>'
+			);
+		}); 
+		$('a.more', minimized_elements).click(function(event){
+			event.preventDefault();
+			$(this).hide().prev().hide();
+			$(this).next().show();        
+		});
+		$('a.less', minimized_elements).click(function(event){
+			event.preventDefault();
+			$(this).parent().hide().prev().show().prev().show();    
+		});
+	});
+	jQuery(function(){
+		var minimized_elements = $('div.minimizeAC');
+		minimized_elements.each(function(){    
+			var t = $(this).text();        
+			if(t.length < 80) return;
+			$(this).html(
+				'<strong>Author Contributions:</strong> '+t.slice(0,80)+'<span>... </span><a href="#" class="more">More</a>'+
+				'<span style="display:none;">'+ t.slice(80,t.length)+' <a href="#" class="less">Less</a></span>'
+			);
+		}); 
+		$('a.more', minimized_elements).click(function(event){
+			event.preventDefault();
+			$(this).hide().prev().hide();
+			$(this).next().show();        
+		});
+		$('a.less', minimized_elements).click(function(event){
+			event.preventDefault();
+			$(this).parent().hide().prev().show().prev().show();    
+		});
+	});
+	</script>
+	
+	
+	
+		
+		
+	
+	
+</div> <!--main-container div -->
+
+<div class="footer-bottom" style="background-color:whitesmoke;padding-top:10px;max-width:1000px;margin:0 auto;">
+			
+			<div class="row">
+				<div class="col-sm-4 center" style="margin-top:30px;text-align:center;">
+					<span style="font-weight:bold;">Current Funders</span>
+						<br>
+						<a  href="https://cordis.europa.eu/project/rcn/215183_en.html"><img src="../logos/european-commission-icon.png" style="margin-top:15px;width:128px;"></a>
+				</div>
+				<div class="col-sm-4 center" style="margin-top:30px;text-align:center;">
+						<span style="font-weight:bold;">Previous Funders</span>
+						<br>
+						<a  href="https://cos.io/"><img src="../logos/COS-logo.png" style="margin-top:15px;"></a> <a  href="http://www.bitss.org/"><img src="../logos/BITSS-logo.png" style="margin-left:30px;margin-top:15px;"></a>
+				</div>
+				<div class="col-sm-4 center" style="margin-top:30px;text-align:center;">
+					<span style="font-weight:bold;margin-bottom:15px;">Contact Details</span>
+						<p style="line-height:1.2em;margin-top:15px;">
+						KU Leuven<br>
+						Quantitative Psychology and Individual Differences Unit<br>
+						Tiensestraat 102, Leuven, Belgium 3000 <br>
+						email: curatescience@<span class="displaynone"></span>gmail.com<br>
+						<a href="https://twitter.com/curatescience"><i class="fab fa-twitter fa-2" aria-hidden="true"></i></a>
+						<a href="https://github.com/eplebel/science-commons"><i class="fab fa-github fa-2" aria-hidden="true"></i></a>
+						</p>
+				</div>		
+			</div>
+			
+			
+		</div> <!--footer-bottom div-->
+
+	
+	
+	
+  
+  <script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-48865749-1', 'auto');
+	  ga('send', 'pageview');
+  </script>
+  
+
+  </body>
+</html>
