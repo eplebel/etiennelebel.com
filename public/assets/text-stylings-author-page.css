@@ -566,3 +566,4 @@ a { text-decoration:none !important; }
 @media only screen and (max-width: 321px) {
 	.label { font-size:55%;}
 }
+.links-margin { margin-left:7px;}
