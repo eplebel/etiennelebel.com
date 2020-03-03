@@ -1,0 +1,50 @@
+
+/* - ++resource++collective.cookielaw/cookielaw.css - */
+/* https://www.psy.ox.ac.uk/portal_css/++resource++collective.cookielaw/cookielaw.css?original=1 */
+#cookienotification {
+display:none;
+background-color: black;
+color: white;
+position: fixed;
+z-index: 10000;
+padding: 10px 1em 10px 1em;
+line-height: 24px;
+font-size: 85%;
+font-weight: bold;
+width: 98%;
+}
+#cookienotification div {
+display: block;
+float: left;
+margin-right: 1em;
+}
+#cookienotification .cookielaw-button {
+background-color: #00aef7;
+}
+#cookienotification .cookielaw-button a,
+#cookienotification .cookielaw-button a:visited {
+display: block;
+padding: 0 8px 0 24px;
+color: #ffffff;
+background: url('/++resource++collective.cookielaw/++resource++collective.cookielaw/tick.png') 5px center no-repeat;
+text-transform: uppercase;
+}
+#cookienotification .cookielaw-moreinfo a,
+#cookienotification .cookielaw-moreinfo a:visited {
+display: block;
+padding: 0 16px 0 8px;
+color: #00aef7;
+text-transform: uppercase;
+background: url('/++resource++collective.cookielaw/++resource++collective.cookielaw/chevron.png') right center no-repeat;
+}
+#cookienotification .cookielaw-close {
+position: absolute;
+top: 0;
+right: 0;
+float: none;
+border: 1px solid #fff;
+padding: 4px;
+line-height: 1em;
+}
+#cookienotification .cookielaw-close a { color: #fff; }
+
