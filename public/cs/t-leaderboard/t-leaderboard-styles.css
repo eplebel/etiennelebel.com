@@ -1,0 +1,111 @@
+
+#table_detail { } 
+#table_detail tr:hover { background-color: #F2F2F2; } 
+#table_detail tr.detail:hover { background-color: white; } 
+#table_detail .hidden_row { display: none; } 
+
+tbody>tr>:nth-child(3),
+tbody>tr>:nth-child(4),
+tbody>tr>:nth-child(5),
+tbody>tr>:nth-child(6),
+tbody>tr>:nth-child(7),
+tbody>tr>:nth-child(8){
+ text-align:center;
+}
+tbody>tr>:nth-child(7){
+ font-weight:bold;
+ font-size:18px;
+ padding-left:17px;
+}
+
+table.article-outline>tbody>tr>:nth-child(2),
+table.article-outline>tbody>tr>:nth-child(3),
+table.article-outline>tbody>tr>:nth-child(4){
+ text-align:center;
+ width:58px;
+}
+table.article-outline>tbody>tr>:nth-child(5){
+ text-align:center;
+ width:58px;
+ padding-left:38px;
+ padding-right:35px;
+}
+
+.cursor {cursor: pointer;}
+
+#arrow1 { transition: all .4s ease-out;;}
+#arrow2 { transition: all .4s ease-out;;}
+#arrow3 { transition: all .4s ease-out;;}
+#arrow4 { transition: all .4s ease-out;;}
+#arrow5 { transition: all .4s ease-out;;}
+#arrow6 { transition: all .4s ease-out;;}
+#arrow7 { transition: all .4s ease-out;;}
+#arrow8 { transition: all .4s ease-out;;}
+#arrow9 { transition: all .4s ease-out;;}
+#arrow10 { transition: all .4s ease-out;;}
+
+.rotate { transform: rotate(180deg); }
+
+.article-outline {
+	border:.5px lightgrey solid;
+	border-radius:5px;
+	margin-top:7px;
+	table-layout:fixed;
+}
+.article-outline.first { margin-top: -3px; }
+
+
+.researcher-name { 
+	margin-bottom:-5px; }
+
+.article-chunk {
+	width:312px;
+	padding-left:35px;
+}
+
+.article-title { font-size:13px;}
+
+.author-line { font-size:11px; }
+
+.authors-text { color:green; }
+
+.journal-name { 
+	color:lightgrey; 
+	font-style: italic;
+	}
+
+.light-grey { color: lightgrey; }
+.view-articles { 
+	margin-top:3px;
+	font-size:1.5em;
+	 }
+.gs-icon { 
+	margin-top:-4px;
+	width:21px;}
+.cs-icon { 
+	margin-top:-1px;
+	width:25px; }
+.cs-icon-header { 
+	margin-top:-1px;
+	width:28px; }
+
+.expand-button { display:inline-block; }	
+
+.affiliation { 
+	font-size:11px; 
+	color:lightgrey; 
+	margin-top:-3px;
+	font-style:italic;
+	}
+	
+.compliant-green { background-color:#f5fff5; }
+.non-compliant-yellow { background-color:#fffff5; }
+
+a:link { 
+	color: black;
+	text-decoration: underline;	} 
+	
+.info-icon {
+	font-size:.75em;
+	margin-top:-2px;
+}
