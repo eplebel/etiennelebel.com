@@ -1,5 +1,6 @@
 
-#table_detail { } 
+#table_detail {table-layout:fixed;
+				} 
 #table_detail tr:hover { background-color: #F2F2F2; } 
 #table_detail tr.detail:hover { background-color: white; } 
 #table_detail .hidden_row { display: none; } 
@@ -15,21 +16,18 @@ tbody>tr>:nth-child(8){
 tbody>tr>:nth-child(7){
  font-weight:bold;
  font-size:18px;
- padding-left:17px;
+ padding-left:20px;
 }
 
 table.article-outline>tbody>tr>:nth-child(2),
 table.article-outline>tbody>tr>:nth-child(3),
 table.article-outline>tbody>tr>:nth-child(4){
  text-align:center;
- width:58px;
+ width:62px;
 }
 table.article-outline>tbody>tr>:nth-child(5){
  text-align:center;
- width:58px;
- padding-left:38px;
- padding-right:35px;
-}
+ width:96px;}
 
 .cursor {cursor: pointer;}
 
@@ -59,20 +57,15 @@ table.article-outline>tbody>tr>:nth-child(5){
 	margin-bottom:-5px; }
 
 .article-chunk {
-	width:312px;
-	padding-left:35px;
-}
+	width:317px;
+	padding-left:35px;}
 
 .article-title { font-size:13px;}
-
 .author-line { font-size:11px; }
-
 .authors-text { color:green; }
-
 .journal-name { 
 	color:lightgrey; 
-	font-style: italic;
-	}
+	font-style: italic;}
 
 .light-grey { color: lightgrey; }
 .view-articles { 
@@ -87,7 +80,11 @@ table.article-outline>tbody>tr>:nth-child(5){
 	width:25px; }
 .cs-icon-header { 
 	margin-top:-1px;
-	width:28px; }
+	width:33px; }
+.scihub-icon-table { 
+	color:lightgrey;
+	font-size:1.6em;
+	vertical-align:middle; }
 
 .expand-button { display:inline-block; }	
 
@@ -101,11 +98,16 @@ table.article-outline>tbody>tr>:nth-child(5){
 .compliant-green { background-color:#f5fff5; }
 .non-compliant-yellow { background-color:#fffff5; }
 
-a:link { 
-	color: black;
-	text-decoration: underline;	} 
-	
+.RNM-text { font-size:10px;}
+
 .info-icon {
 	font-size:.75em;
 	margin-top:-2px;
 }
+.checkmark-icon { margin-left:2px; }
+.OA-icon-table { width:18px; }
+.OD-icon-table { width:20px; }
+.BR-icon-table { width:23px; }
+.CS-icon-table { width:27px; }
+
+.article-table-CS-column { padding-left:3px;}
