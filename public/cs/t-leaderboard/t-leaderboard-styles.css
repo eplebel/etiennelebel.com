@@ -1,6 +1,5 @@
 
-#table_detail {table-layout:fixed;
-				} 
+#table_detail {	} 
 #table_detail tr:hover { background-color: #F2F2F2; } 
 #table_detail tr.detail:hover { background-color: white; } 
 #table_detail .hidden_row { display: none; } 
@@ -48,7 +47,7 @@ table.article-outline>tbody>tr>:nth-child(5){
 	border:.5px lightgrey solid;
 	border-radius:5px;
 	margin-top:7px;
-	table-layout:fixed;
+	
 }
 .article-outline.first { margin-top: -3px; }
 
@@ -57,7 +56,7 @@ table.article-outline>tbody>tr>:nth-child(5){
 	margin-bottom:-5px; }
 
 .article-chunk {
-	width:317px;
+	width:305px;
 	padding-left:35px;}
 
 .article-title { font-size:13px;}
