@@ -96,8 +96,12 @@ table.article-outline>tbody>tr>:nth-child(5){
 	vertical-align:middle; }
 
 .expand-button { display:inline-block; }	
-.expand-button:hover {border:1px solid darkgrey;
-					border-radius:5px;}
+/*.expand-button:hover {border:1px solid darkgrey;
+					border-radius:5px;} */
+tr:hover .expand-button { 
+	border:1px solid darkgrey; 
+	border-radius:5px;}
+
 .affiliation { 
 	font-size:11px; 
 	color:lightgrey; 
