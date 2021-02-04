@@ -1,8 +1,11 @@
 
 #table_detail {	} 
-#table_detail tr:hover { background-color: #F2F2F2; } 
-#table_detail tr.detail:hover { background-color: white; } 
+/*#table_detail tr:hover { background-color: #F2F2F2; } */
+/*#table_detail tr:hover { border:1px solid darkgrey; } */
+#table_detail tr.detail:hover { background-color: white; }  
 #table_detail .hidden_row { display: none; } 
+
+tbody>tr>:nth-child(3) { padding:2px 10px 10px 10px; }
 
 tbody>tr>:nth-child(3),
 tbody>tr>:nth-child(4),
@@ -21,12 +24,15 @@ tbody>tr>:nth-child(7){
 table.article-outline>tbody>tr>:nth-child(2),
 table.article-outline>tbody>tr>:nth-child(3),
 table.article-outline>tbody>tr>:nth-child(4){
+ padding:15px;
  text-align:center;
  width:62px;
 }
 table.article-outline>tbody>tr>:nth-child(5){
+ padding:17px;
  text-align:center;
- width:96px;}
+ width:96px;
+ }
 
 .cursor {cursor: pointer;}
 
@@ -56,7 +62,7 @@ table.article-outline>tbody>tr>:nth-child(5){
 	margin-bottom:-5px; }
 
 .article-chunk {
-	width:305px;
+	width:300px;
 	padding-left:35px;}
 
 .article-title { font-size:13px;}
@@ -67,9 +73,12 @@ table.article-outline>tbody>tr>:nth-child(5){
 	font-style: italic;}
 
 .light-grey { color: lightgrey; }
+.dark-grey { 
+	color: darkgrey;
+	margin-top:4px;}
 .view-articles { 
-	margin-top:3px;
 	font-size:1.5em;
+	vertical-align:bottom;
 	 }
 .gs-icon { 
 	font-size:1.5em;
@@ -82,12 +91,13 @@ table.article-outline>tbody>tr>:nth-child(5){
 	margin-top:-1px;
 	width:33px; }
 .scihub-icon-table { 
-	color:lightgrey;
+	color:#99b3ff;
 	font-size:1.6em;
 	vertical-align:middle; }
 
 .expand-button { display:inline-block; }	
-
+.expand-button:hover {border:1px solid darkgrey;
+					border-radius:5px;}
 .affiliation { 
 	font-size:11px; 
 	color:lightgrey; 
@@ -99,15 +109,111 @@ table.article-outline>tbody>tr>:nth-child(5){
 .non-compliant-yellow { background-color:#fffff5; }
 
 .RNM-text { font-size:10px;}
-
+.popup-notes-text {
+	font-size:11px;
+	margin-top:5px;}
 .info-icon {
 	font-size:.75em;
 	margin-top:-2px;
 }
 .checkmark-icon { margin-left:2px; }
+.x-icon { margin-left:2px; }
+.hr-bar {
+	margin-top:.4rem;
+	margin-bottom:.4rem; }
 .OA-icon-table { width:18px; }
 .OD-icon-table { width:20px; }
 .BR-icon-table { width:23px; }
 .CS-icon-table { width:27px; }
 
 .article-table-CS-column { padding-left:3px;}
+
+.met-text {
+	font-weight:bold;
+	color:green;
+}
+.not-met-text {
+	font-weight:bold;
+	color:gold;
+}
+
+.popUpStyle {
+	font-size:12px;
+	line-height:normal;
+	border:1px solid darkgrey;
+	background-color:white;
+	padding:5px;
+	z-index:9998;	}
+.popupWrapper {
+	min-width:300px;
+	/*min-height:100px;
+	white-space:normal;*/
+	text-align:left;
+}
+.popUpOnHover { 
+	position:relative; 
+	border-bottom:1px dotted grey;
+}
+.popUpOnHover:hover span.oa-popup-header { display:block; }
+.popUpOnHover:hover span.od-popup-header { display:block; }
+.popUpOnHover:hover span.br-popup-header { display:block; }
+.popUpOnHover:hover span.t-standard-popup-header { display:block; }
+.popUpOnHover:hover span.oa-popup { display:block; }
+.popUpOnHover:hover span.od-popup { display:block; }
+.popUpOnHover:hover span.br-popup { display:block; }
+.popUpOnHover:hover span.t-standard-popup { display:block; }
+.popUpOnHover:hover span.od-popup-notes { display:block; }
+.popUpOnHover:hover span.br-popup-notes { display:block; }
+.oa-popup-header {
+	display:none;
+	position:absolute; 
+	top:-78px; 
+	left:-12px; }
+.od-popup-header {
+	display:none;
+	position:absolute; 
+	top:-119px; 
+	left:-12px; }
+.br-popup-header {
+	display:none;
+	position:absolute; 
+	top:-122px; 
+	left:-12px; }	
+.t-standard-popup-header {
+	display:none;
+	position:absolute; 
+	top:-126px; 
+	left:3px;}
+	
+.oa-popup {
+	display:none;
+	position:absolute; 
+	top:-62px; 
+	left:-12px; }
+.od-popup {
+	display:none;
+	position:absolute; 
+	top:-60px; 
+	left:-12px; }
+.br-popup {
+	display:none;
+	position:absolute; 
+	top:-78px; 
+	left:-12px; }
+.t-standard-popup {
+	display:none;
+	position:absolute; 
+	top:-108px; 
+	left:3px;}
+
+.od-popup-notes {
+	display:none;
+	position:absolute; 
+	top:-75px; 
+	left:-12px; }
+.br-popup-notes {
+	display:none;
+	position:absolute; 
+	top:-118px; 
+	left:-12px;
+	min-height:120px;}
