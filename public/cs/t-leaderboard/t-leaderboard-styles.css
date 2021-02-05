@@ -36,16 +36,16 @@ table.article-outline>tbody>tr>:nth-child(5){
 
 .cursor {cursor: pointer;}
 
-#arrow1 { transition: all .4s ease-out;;}
-#arrow2 { transition: all .4s ease-out;;}
-#arrow3 { transition: all .4s ease-out;;}
-#arrow4 { transition: all .4s ease-out;;}
-#arrow5 { transition: all .4s ease-out;;}
-#arrow6 { transition: all .4s ease-out;;}
-#arrow7 { transition: all .4s ease-out;;}
-#arrow8 { transition: all .4s ease-out;;}
-#arrow9 { transition: all .4s ease-out;;}
-#arrow10 { transition: all .4s ease-out;;}
+#arrow1 { transition: all .4s ease-out;}
+#arrow2 { transition: all .4s ease-out;}
+#arrow3 { transition: all .4s ease-out;}
+#arrow4 { transition: all .4s ease-out;}
+#arrow5 { transition: all .4s ease-out;}
+#arrow6 { transition: all .4s ease-out;}
+#arrow7 { transition: all .4s ease-out;}
+#arrow8 { transition: all .4s ease-out;}
+#arrow9 { transition: all .4s ease-out;}
+#arrow10 { transition: all .4s ease-out;}
 
 .rotate { transform: rotate(180deg); }
 
@@ -140,6 +140,12 @@ tr:hover .expand-button {
 	font-weight:bold;
 	color:gold;
 }
+.faq { font-size:14px;
+		line-height:1.35rem;}
+.faq.q { font-weight:500;}
+.faq.a { 
+	margin-bottom:15px;
+	color: darkgrey }
 
 .popUpStyle {
 	font-size:12px;

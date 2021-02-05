@@ -2,6 +2,7 @@
 <html> 
 
 <head> 
+	<meta http-equiv="cache-control" content="must-revalidate" />
 	<meta name="google" content="notranslate" />
 	<script src= 
 "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
@@ -58,7 +59,7 @@
 	
 		<h2 style="text-align:center;margin:16px 16px;">Transparency Leaderboard</h2>
 		<div style="margin:0 auto;max-width:660px;line-height:1.45em;">
-			Audited transparency of scientists' last 10 (or more) peer-reviewed publications (empirical article type; <i>as of January 27, 2021</i>; <a target="_self" href="#protocol">audit protocol</a>; <a target="_self" href="#rationale">motivations</a>).
+			Audited transparency of scientists' last 10 (or more) peer-reviewed publications (empirical article type; <i>as of January 27, 2021</i>; <a target="_self" href="#protocol">audit protocol</a>; <a target="_self" href="#rationale">motivations</a>; <a target="_self" href="#FAQ">FAQ</a>).
 		</div>
 
 		<table id="table_detail" align=center cellpadding=10 > 
@@ -73,7 +74,7 @@
 						%<img width="20px" src="logos/open-access-icon.png"/>
 						<span class="oa-popup-header popUpStyle">
 							<div class="popupWrapper" style="font-weight:normal;">
-								<strong>% of authors'  articles that MEET the <img src='logos/open-access-icon.png' class='OA-icon-table'/> Open access standard requirements </strong> (<a target="_self" href="#t-requirements-details">details</a>)
+								<strong>% of authors'  articles that MEET the <img src='logos/open-access-icon.png' class='OA-icon-table'/> Open access requirements </strong> (<a target="_self" href="#t-requirements-details">details</a>)
 								<hr style="margin-top:.4rem;margin-bottom:.4rem;">
 								<i class='fas fa-check fa-1x light-grey checkmark-icon'></i> Gold/diamond/green open access
 							</div>
@@ -86,7 +87,7 @@
 						%<img width="26px" src="logos/data-large.png" />						
 						<span class="od-popup-header popUpStyle">
 							<div class="popupWrapper" style="font-weight:normal;">
-								<strong>% of authors' articles that MEET the <img src='logos/data-large.png' class='OD-icon-table'/> Open data standard requirements </strong> (<a target="_self" href="#t-requirements-details">details</a>)
+								<strong>% of authors' articles that MEET the <img src='logos/data-large.png' class='OD-icon-table'/> Open data requirements </strong> (<a target="_self" href="#t-requirements-details">details</a>)
 								<hr style="margin-top:.4rem;margin-bottom:.4rem;">
 								<i class='fas fa-check fa-1x light-grey checkmark-icon'></i> Minimal dataset (for all studies) publicly available when ethically possible 
 								<div class="dark-grey">(Link in article, on Curate Scholar author page, or in [co-]author website publication list.)</div>
@@ -125,7 +126,7 @@
 						</span>
 					</div>
 				</th> 
-				<th>h-index</th> 
+				<th style="vertical-align:bottom;" title="All-time h-index (Google Scholar): The maximum # of publications *h* that have been cited at least *h* times.">h-index</th>  
 			</tr> 
 
 
@@ -4747,7 +4748,7 @@
 		</div>
 		<div id="protocol" ><strong>Audit Protocol</strong>
 			<br>
-			For each researcher, two (2) independent coders (chief curator Etienne P. LeBel and volunteer curator Dominik Lenda) audited the transparency status of each of the 3 transparency categories (OA, open data, and basic reporting) for ALL peer-reviewed, empirical publications in the 2015 to 2021 time period (or older for early adopters). This was done by searching within the full-texts of articles, which were found via Google Scholar, on author's personal websites, or author's Curate Scholar author page.  When OA full-text was NOT available, we used either a <i class='ai ai-sci-hub ai-2x scihub-icon-table'></i> Sci-Hub PDF or preprint to audit the open data and basic reporting categories (indicated via hyperlinked Sci-Hub icon to the right of article titles, e.g., <a href=' https://onlinelibrary.wiley.com.sci-hub.se/doi/abs/10.1111/pere.12297'><i class='ai ai-sci-hub ai-2x scihub-icon-table'></i></a>). When in doubt, we erred on the side of being overly generous/charitable, given that (1) we're in a transition period, and (2) being generous in meeting a transparency standard is still better than NOT meeting *any* transparency standard AT ALL.
+			For each article, two (2) independent coders (chief curator Etienne P. LeBel and volunteer curator Dominik Lenda) audited the transparency status of each of the 3 transparency categories (OA, open data, and basic reporting) for ALL peer-reviewed, empirical articles published by each author between 2015 to 2021 (or older for early adopters). This was done by searching within the full-texts of articles, which were found via Google Scholar, on author's personal websites, or author's Curate Scholar author page.  When OA full-text was NOT available, we used either a <i class='ai ai-sci-hub ai-2x scihub-icon-table'></i> Sci-Hub PDF or preprint to audit the open data and basic reporting categories (indicated via hyperlinked Sci-Hub icon to the right of article titles, e.g., <a href=' https://onlinelibrary.wiley.com.sci-hub.se/doi/abs/10.1111/pere.12297'><i class='ai ai-sci-hub ai-2x scihub-icon-table'></i></a>). When in doubt, we erred on the side of being overly generous/charitable, given that (1) we're in a transition period, and (2) being generous in meeting a transparency standard is still better than NOT meeting *any* transparency standard AT ALL.
 		</div>
 		<div id="rationale" style="margin-top:20px;"><strong>Rationale/Motivations</strong>
 			<br>
@@ -4755,11 +4756,55 @@
 			
 		</div>
 		<div id="FAQ" style="min-height:1000px;margin-top:20px;" ><strong>FAQ</strong>
-			<br>
-			Coming soon.
+			
+			<div class="faq q">
+				How were authors chosen for the transparency audit?
+			</div>
+			<div class="faq a">
+				Authors were chosen either because they are (1) transparency advocates/leaders/early adopters and/or (2) are high-impact/high-visibility researchers. This is a "proof of concept" exercise as part of our <strong>targeted transparency audits</strong>.  Soon, we will begin <strong>random audits</strong> of all researchers (population frame = Google Scholar and all major open access journals).
+			</div>
+			<div class="faq q">
+				What authority does Curate Science have to do transparency audits?
+			</div>
+			<div class="faq a">
+				Curate Science does NOT technically have any official authority.  However, our transparency audits, and transparency standards, are based on foundational first principles, and current ethical principles that all researchers are expected to abide by (e.g., <a href="https://www.knaw.nl/shared/resources/actueel/bestanden/netherlands-code-of-conduct-for-research-integrity-2018-uk#page=13">NWO code of conduct</a>). We also practice what we preach, i.e., accountability through transparency, committed to conducting our transparency audits transparently (and correcting errors/inaccuracies swiftly). 
+			</div>
+			<div class="faq q">
+				How were the minimum requirements for the transparency standards chosen?
+			</div>
+			<div class="faq a">
+				Minimum requirements were chosen as to be as generous/lenient as possible (i.e., we chose the fewest possible requirements) while still conforming to current ethical codes of conduct scientists are expected to abide by (e.g., <a href="https://www.knaw.nl/shared/resources/actueel/bestanden/netherlands-code-of-conduct-for-research-integrity-2018-uk#page=13">NWO</a>). 
+			</div>
+			<div class="faq q">
+				But isn't there still some arbitrariness in these minimum standards?
+			</div>
+			<div class="faq a">
+				To some extent yes, but it is still better for the research community to have its researcher meet a minimum transparency standard with small amounts of arbitrariness, than NOT meeting any transparency standard at all (the current situation).
+			</div>
+			<div class="faq q">
+				What are the benefits of transparency audits?
+			</div>
+			<div class="faq a">
+				Tracking the transparency track record of researchers via transparency audits offers a multitude of benefits for ALL research stakeholders (i.e., researchers, journals, universities, funding agencies, and citizens). For example, researchers can signal their transparency track record on their website/CV, universities can use job candidate's transparency track record in hiring/promotion decision, and funding agencies can use this in grant application/renewal decisions (and several other applications).
+			</div>
+			<div class="faq q">
+				How can I add missing transparency information to my published articles?
+			</div>
+			<div class="faq a">
+				You can do so by adding the information to your publication list via a <a href="https://curatescience.org/accounts/signup/">Curate Scholar author page</a>, or on your own website (more details on this coming soon).
+			</div>
+			<div class="faq q">
+			</div>
+			<div class="faq a">
+			</div>
+			<div class="faq q">
+			</div>
+			<div class="faq a">
+			</div>
+			
 			
 			<div style="margin-top:50px;">
-				Please contact curatescience@gmail.com to report any errors or inaccuracies.
+				Please contact curatescience@gmail.com to report any transparency audit errors/inaccuracies.
 			</div>
 		</div>
 	</div>
