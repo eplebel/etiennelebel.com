@@ -41,7 +41,7 @@ table.article-outline>tbody>tr>:nth-child(4){
 table.article-outline>tbody>tr>:nth-child(5){
  padding:17px;
  text-align:center;
- width:96px;
+ width:90px;
  }
 
 .cursor {cursor: pointer;}
@@ -63,10 +63,9 @@ table.article-outline>tbody>tr>:nth-child(5){
 	border:.5px lightgrey solid;
 	border-radius:5px;
 	margin-top:7px;
-	
+	border-collapse:separate;
 }
 .article-outline.first { margin-top: -3px; }
-
 
 .researcher-name { 
 	margin-bottom:-5px; }
@@ -105,9 +104,18 @@ table.article-outline>tbody>tr>:nth-child(5){
 	font-size:1.6em;
 	vertical-align:middle; }
 
-.expand-button { display:inline-block; }	
+.expand-button { 
+	display:inline-block; }	
 /*.expand-button:hover {border:1px solid darkgrey;
 					border-radius:5px;} */
+.flashing {
+	animation: blink .75s step-end infinite alternate; 
+	animation-iteration-count: 10;
+	border: 1px solid #F8F8F8;
+	border-radius:5px;
+}
+@keyframes blink { 50% { border-color: #000000; }  }
+
 tr:hover .expand-button { 
 	border:1px solid darkgrey; 
 	border-radius:5px;}
@@ -150,7 +158,7 @@ tr:hover .expand-button {
 	font-weight:bold;
 	color:gold;
 }
-.faq { font-size:14px;
+.faq { font-size:15px;
 		line-height:1.35rem;}
 .faq.q { font-weight:500;}
 .faq.a { 
@@ -237,3 +245,17 @@ tr:hover .expand-button {
 	top:-118px; 
 	left:-12px;
 	min-height:120px;}
+	
+.popUpOnHoverTwidget { 
+	position:relative; 
+	display:inline-block;
+}
+.popUpOnHoverTwidget:hover span.t-widget-percentage { display:block; }
+.t-widget-percentage {
+	display:none;
+	position:absolute; 
+	top:-133px; 
+	left:-5px; }
+.badge {
+	border:1px solid darkgrey;
+}
