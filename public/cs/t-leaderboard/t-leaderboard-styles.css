@@ -105,9 +105,9 @@ table.article-outline>tbody>tr>:nth-child(5){
 	vertical-align:middle; }
 
 .expand-button { 
-	display:inline-block; }	
-/*.expand-button:hover {border:1px solid darkgrey;
-					border-radius:5px;} */
+	display:inline-block; 
+	border:1px solid #F8F8F8; 
+	border-radius:5px; }
 .flashing {
 	animation: blink .75s step-end infinite alternate; 
 	animation-iteration-count: 10;
@@ -254,7 +254,7 @@ tr:hover .expand-button {
 .t-widget-percentage {
 	display:none;
 	position:absolute; 
-	top:-133px; 
+	top:-139px; 
 	left:-5px; }
 .badge {
 	border:1px solid darkgrey;
