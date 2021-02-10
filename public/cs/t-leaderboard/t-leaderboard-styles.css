@@ -98,12 +98,26 @@ table.article-outline>tbody>tr>:nth-child(5){
 	width:25px; }
 .cs-icon-header { 
 	margin-top:-1px;
-	width:33px; }
+	width:41px; }
+.CS-icon-table { width:39px; }
+.CS-icon-table-RNM { width:32px; }
+.OA-icon-table { width:18px; }
+.OD-icon-table { width:20px; }
+.BR-icon-table { width:23px; }
 .scihub-icon-table { 
 	color:#99b3ff;
 	font-size:1.6em;
 	vertical-align:middle; }
-
+.info-icon {
+	font-size:.75em;
+	margin-top:-2px;
+}
+.checkmark-icon { margin-left:2px; }
+.x-icon { margin-left:2px; }
+.hr-bar {
+	margin-top:.4rem;
+	margin-bottom:.4rem; }
+	
 .expand-button { 
 	display:inline-block; 
 	border:1px solid #F8F8F8; 
@@ -134,19 +148,6 @@ tr:hover .expand-button {
 .popup-notes-text {
 	font-size:11px;
 	margin-top:5px;}
-.info-icon {
-	font-size:.75em;
-	margin-top:-2px;
-}
-.checkmark-icon { margin-left:2px; }
-.x-icon { margin-left:2px; }
-.hr-bar {
-	margin-top:.4rem;
-	margin-bottom:.4rem; }
-.OA-icon-table { width:18px; }
-.OD-icon-table { width:20px; }
-.BR-icon-table { width:23px; }
-.CS-icon-table { width:27px; }
 
 .article-table-CS-column { padding-left:3px;}
 
@@ -190,6 +191,7 @@ tr:hover .expand-button {
 .popUpOnHover:hover span.od-popup { display:block; }
 .popUpOnHover:hover span.br-popup { display:block; }
 .popUpOnHover:hover span.t-standard-popup { display:block; }
+.popUpOnHover:hover span.t-standard-popup-RNM { display:block; }
 .popUpOnHover:hover span.od-popup-notes { display:block; }
 .popUpOnHover:hover span.br-popup-notes { display:block; }
 .oa-popup-header {
@@ -231,7 +233,12 @@ tr:hover .expand-button {
 .t-standard-popup {
 	display:none;
 	position:absolute; 
-	top:-108px; 
+	top:-117px; 
+	left:3px;}
+.t-standard-popup-RNM {
+	display:none;
+	position:absolute; 
+	top:-113px; 
 	left:3px;}
 
 .od-popup-notes {
