@@ -29,7 +29,50 @@
 	
 	<style>
 
-</style>
+	.popUpStyleAuthorPage {
+		font-size:12px;
+		line-height:normal;
+		border:1px solid darkgrey;
+		background-color:white;
+		padding:5px;
+		z-index:9998;	}
+	.popupWrapperAuthorPage {
+		min-width:310px;
+		/*min-height:100px;
+		white-space:normal;*/
+		text-align:left;
+	}
+	.popUpOnHoverTwidget { 
+		position:relative; 
+		display:inline-block;
+		border-bottom:1px dotted grey;
+		vertical-align:top;
+	}
+	.popUpOnHoverTwidget:hover span.t-widget-percentage { display:block; }
+	.t-widget-percentage {
+		display:none;
+		position:absolute; 
+		top:-95px; 
+		left:44px; }
+	
+	.CS-icon-table { width:39px; }
+	.CS-icon-table-RNM { width:32px; }
+	.OA-icon-table { width:18px; }
+	.OD-icon-table { width:20px; }
+	.BR-icon-table { width:23px; }
+	.met-text {
+		font-weight:bold;
+		color:green;
+	}
+	.checkmark-icon { margin-left:2px; }
+	.hr-bar {
+		margin-top:.4rem;
+		margin-bottom:.4rem; }
+	.light-grey { color: lightgrey; }
+	.grey { color: grey; }
+	.dark-grey { color: darkgrey; }
+
+	</style>
  
 
 
@@ -40,14 +83,30 @@
  <div class="container-fluid">
 	
 
-			<p style="text-align:center;margin-top:8px;margin-bottom:0px;">
+			<p style="text-align:center;margin-top:10px;margin-bottom:0px;">
 				<img src="logos/profile-photo.png" style="width:100px;">
 			</p>
-			<p style="text-align:center;margin-top:7px;">
-				<span style="font-size:24px;font-weight:bold;">Etienne P. LeBel, PhD</span>
-				<div style="line-height:17px;font-size:14px;text-align:center;margin-top:-10px;"><i>Independent Meta-Scientist</i></div>
-			</p>
-			<div style="text-align:center;margin-top:-4px;">
+			<div style="text-align:center;margin-top:7px;">
+				<div style="font-size:24px;font-weight:bold;display:inline-block;">Etienne P. LeBel</div>
+				
+				<div class='popUpOnHoverTwidget'>
+					<img src='logos/CS-snail-gray-integrated-checkmark.png' style="margin-top:2px;width:43px;opacity:.75;" class='CS-icon-table'/>  
+					<span class='t-widget-percentage popUpStyleAuthorPage'>
+						<div class='popupWrapperAuthorPage'>
+							<div style="line-height:20px;"><span style="font-weight:bold;font-size:18px;" class="met-text">82%</span> of <a target="_blank" href="https://curatescience.org/app/author/etienne-p-lebel" style="text-decoration:underline;">Etienne P LeBel's</a> last 11 articles (2009-2021) <span class='met-text'>MEET</span> the  <img src='logos/CS-snail-gray-integrated-checkmark.png' class='CS-icon-table'/ style="margin-top:-5px;width:36px;"> <strong>Curate Science transparency standard</strong> </div>
+							<hr class='hr-bar'>
+							<i class='fas fa-check fa-1x light-grey checkmark-icon'></i> <img src='logos/open-access-icon.png' class='OA-icon-table'/> Gold/diamond/green open access
+							<br>
+							<i class='fas fa-check fa-1x light-grey checkmark-icon'></i> <img src='logos/data-large.png' class='OD-icon-table'/> Open/public data when ethically possible
+							<br>
+							<i class='fas fa-check fa-1x light-grey checkmark-icon'></i> <img src='logos/br-icon.png' class='BR-icon-table'/> COIs/funding  disclosures
+						</div>
+					</span>
+				</div>
+				
+				<div style="line-height:17px;font-size:14px;text-align:center;margin-top:-2px;"><i>Independent Meta-Scientist</i></div>
+			</div>
+			<div style="text-align:center;margin-top:7px;">
 				<a href="http://scholar.google.ca/citations?user=5yUj4IYAAAAJ&hl=en" target="_blank" title="View my Google Scholar profile" class="grey links-margin"><i class="ai ai-google-scholar ai-2x"></i></a>
 				<a href="https://orcid.org/0000-0001-7377-008X" target="_blank" title="View my ORCID profile" class="grey links-margin"><i class="ai ai-orcid ai-2x"></i></a>
 				<a href="https://impactstory.org/u/0000-0001-7377-008X" target="_blank" title="View my alternative impact metrics" class="grey links-margin"><i class="ai ai-impactstory ai-2x"></i></a>
@@ -58,20 +117,18 @@
 			</div>
 
 			<div class="brief-bio">
-				Psychologist, meta-scientist, and host of the <a href="https://www.youtube.com/user/eplebel" target="_blank"> Saving Science Show</a>. I investigate the <span class="semi">credibility of scientific research</span>. My current efforts are focused on <a href="http://CurateScience.org" target="_blank">Curate Science</a>, an integrated system and platform to allow researchers, journals, universities, and funders to ensure that research is <span class="semi">transparent</span> (meets minimum transparency standards) and <span class="semi">credible</span> (survives various kinds of follow-up scrutiny, e.g., replications). I previously lead <a href="http://PsychDisclosure.org" target="_blank">PsychDisclosure.org</a>, a grassroots initiative that contributed to raising transparency standards <a href="http://www.psychologicalscience.org/index.php/publications/observer/obsonline/whats-new-at-psychological-science.html" target="_blank">at leading journals in psychology</a>. My background is in social psychology where I examined racial biases/prejudice and methodological issues in psychology (e.g., <a href="https://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1282&context=etd" target="_blank">units of measurement standardization</a>; <a href="documents/l&p(2011,rgp).pdf" target="_blank">suboptimal research practices</a> that <a href="documents/l&p(2011,pspb).pdf" target="_blank">decrease replicability</a>).
+				I'm an independent scientist, meta-scientist, psychologist, and host of the <a href="https://www.youtube.com/user/eplebel" target="_blank"> Saving Science Show</a>. I investigate the <span class="semi">credibility of scientific research</span>. My current efforts are focused on leading the (nonprofit initiative) <a href="http://CurateScience.org" target="_blank">Curate Science</a>, which develops web tools to curate, signal, and <strong>audit the transparency of scientific research</strong> (for researchers, journals, universities, and funders). I previously lead <a href="http://PsychDisclosure.org" target="_blank">PsychDisclosure.org</a>, a grassroots initiative that contributed to raising transparency standards <a href="http://www.psychologicalscience.org/index.php/publications/observer/obsonline/whats-new-at-psychological-science.html" target="_blank">at leading journals in psychology</a>. My background is in social psychology where I examined racial biases/prejudice and methodological issues in psychology (e.g., <a href="https://ir.lib.uwo.ca/cgi/viewcontent.cgi?article=1282&context=etd" target="_blank">units of measurement standardization</a>; <a href="documents/l&p(2011,rgp).pdf" target="_blank">suboptimal research practices</a> that <a href="documents/l&p(2011,pspb).pdf" target="_blank">decrease replicability</a>).
 				
-				<div style="margin-top:6px;">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/3WfqxND6Xwg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
+				
 			</div>
 		
 
 		
 		
 		<div class="widget-container">
-			 <div class='article-list-heading' style='margin-bottom:-5px;'>Peer-Reviewed Articles & Chapters 
+			 <div class='article-list-heading' style='margin-bottom:-5px;'>Peer-Reviewed Publications 
           						    <br>
-          						    <a href='http://curatescience.org' title='Powered by CurateScience.org'><img src='logos/CS-logo-powered-by-logo.png'
+          						    <a href='http://curatescience.org' title='Powered by CurateScience.org'><img src='logos/CS-logo-powered-by-logo-grey.png'
                             style='max-width:90px;margin-right:0px;'></a>
           						  </div>
 				
