@@ -98,7 +98,8 @@ table.article-outline>tbody>tr>:nth-child(5){
 	vertical-align:bottom;}
 .cs-icon { 
 	margin-top:-1px;
-	width:25px; }
+	width:25px;
+	opacity:.7;}
 .cs-icon-header { 
 	margin-top:-1px;
 	width:41px; }
@@ -268,7 +269,7 @@ tr:hover .expand-button {
 .br-popup-notes {
 	display:none;
 	position:absolute; 
-	top:-118px; 
+	top:-117px; 
 	left:-12px;
 	min-height:120px;}
 	
@@ -296,3 +297,4 @@ tr:hover .expand-button {
 	margin-left:2px;
 	color: #0056b3b0;
 }
+.td-vert-tweak { margin-top:-8px; }
