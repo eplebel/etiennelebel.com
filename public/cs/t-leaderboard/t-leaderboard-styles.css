@@ -32,6 +32,9 @@ tbody>tr>:nth-child(7){
  font-size:18px;
  padding-left:20px;
 }
+tbody>tr>:nth-child(8){
+ color:grey;
+}
 
 table.article-outline>tbody>tr>:nth-child(2),
 table.article-outline>tbody>tr>:nth-child(3),
@@ -298,3 +301,6 @@ tr:hover .expand-button {
 	color: #0056b3b0;
 }
 .td-vert-tweak { margin-top:-8px; }
+.author-verified {
+	color:grey;
+	font-size:16px; }
