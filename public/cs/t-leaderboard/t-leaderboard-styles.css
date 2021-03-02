@@ -153,7 +153,8 @@ tr:hover .expand-button {
 
 .RNM-text { font-size:10px;}
 .popup-notes-text-BR {
-	font-size:11px;
+	font-size:10px;
+	line-height:11px;
 	margin-top:5px;
 	color:darkgrey;}
 .popup-notes-text {
@@ -170,24 +171,28 @@ tr:hover .expand-button {
 	font-weight:bold;
 	color:gold;
 }
-.faq { font-size:15px;
-		line-height:1.35rem;}
+.faq { 
+	font-size:15px;
+	line-height:1.35rem;}
 .faq.q { font-weight:500;}
 .faq.a { 
 	margin-bottom:15px;
-	color: darkgrey }
+	color:#797878; }
 
 .popUpStyle {
 	font-size:12px;
 	line-height:normal;
 	border:1px solid darkgrey;
+	border-radius:4px;
 	background-color:white;
 	padding:5px;
-	z-index:9998;	}
+	z-index:9998; }
 .popupWrapper {
-	min-width:310px;
-	/*min-height:100px;
-	white-space:normal;*/
+	min-width:315px;
+	text-align:left;
+}
+.popupWrapperBR {
+	min-width:350px;
 	text-align:left;
 }
 .popUpOnHover { 
@@ -207,6 +212,7 @@ tr:hover .expand-button {
 .popUpOnHover:hover span.od-popup-notes { display:block; }
 .popUpOnHover:hover span.od-popup-RNM-notes { display:block; }
 .popUpOnHover:hover span.br-popup-notes { display:block; }
+.popUpOnHover:hover span.br-popup-notes-long { display:block; }
 .oa-popup-header {
 	display:none;
 	position:absolute; 
@@ -220,12 +226,12 @@ tr:hover .expand-button {
 .br-popup-header {
 	display:none;
 	position:absolute; 
-	top:-122px; 
+	top:-119px; 
 	left:-12px; }	
 .t-standard-popup-header {
 	display:none;
 	position:absolute; 
-	top:-126px; 
+	top:-132px; 
 	left:3px;}
 	
 .oa-popup {
@@ -272,9 +278,15 @@ tr:hover .expand-button {
 .br-popup-notes {
 	display:none;
 	position:absolute; 
-	top:-117px; 
+	top:-103px; 
 	left:-12px;
-	min-height:120px;}
+	/*min-height:120px;*/}
+.br-popup-notes-long {
+	display:none;
+	position:absolute; 
+	top:-145px; 
+	left:-12px;
+	min-height:148px;}
 	
 .popUpOnHoverTwidget { 
 	position:relative; 
@@ -304,3 +316,6 @@ tr:hover .expand-button {
 .author-verified {
 	color:grey;
 	font-size:16px; }
+.faq-coi-bolded {
+	font-weight:bold;
+	color:green; }	
