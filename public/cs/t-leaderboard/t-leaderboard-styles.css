@@ -95,14 +95,17 @@ table.article-outline>tbody>tr>:nth-child(5){
 	font-size:1.5em;
 	vertical-align:bottom;
 	 }
+.website-icon {
+	font-size:.9em;
+	color:lightgrey;}
 .gs-icon { 
-	font-size:1.5em;
+	font-size:1.35em;
 	color:lightgrey;
 	vertical-align:bottom;}
 .cs-icon { 
 	margin-top:-1px;
-	width:25px;
-	opacity:.7;}
+	width:23px;
+	opacity:.55;}
 .cs-icon-header { 
 	margin-top:-1px;
 	width:41px; }
@@ -114,7 +117,8 @@ table.article-outline>tbody>tr>:nth-child(5){
 .scihub-icon-table { 
 	color:#99b3ff;
 	font-size:1.6em;
-	vertical-align:middle; }
+	vertical-align:middle;
+	margin-bottom:-2px;}
 .info-icon {
 	font-size:.75em;
 	margin-top:-2px;
@@ -237,7 +241,7 @@ tr:hover .expand-button {
 .oa-popup {
 	display:none;
 	position:absolute; 
-	top:-62px; 
+	top:-81px; 
 	left:-12px; }
 .od-popup {
 	display:none;
@@ -303,7 +307,7 @@ tr:hover .expand-button {
 }
 .small-icon-OD {
 	font-size:1.5em;
-	color:grey; 
+	color:#9b9b9b; 
 	vertical-align:bottom;}
 .transp-square { 
 	width:15px;
