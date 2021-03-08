@@ -39,12 +39,12 @@ tbody>tr>:nth-child(8){
 table.article-outline>tbody>tr>:nth-child(2),
 table.article-outline>tbody>tr>:nth-child(3),
 table.article-outline>tbody>tr>:nth-child(4){
- padding:15px;
+ padding:0px 18px;
  text-align:center;
  width:68px;
 }
 table.article-outline>tbody>tr>:nth-child(5){
- padding:16px;
+ padding:0px 28px;
  text-align:center;
  width:106px;
  }
@@ -69,6 +69,7 @@ table.article-outline>tbody>tr>:nth-child(5){
 	border-radius:5px;
 	margin-top:7px;
 	border-collapse:separate;
+	box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .05), 0 2px 4px 2px rgba(0, 0, 0, .05), 0 2px 4px -3px rgba(0, 0, 0, .05);
 }
 .article-outline.first { margin-top: -3px; }
 
