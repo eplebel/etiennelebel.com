@@ -103,6 +103,13 @@ table.article-outline>tbody>tr>:nth-child(5){
 	font-size:1.35em;
 	color:lightgrey;
 	vertical-align:bottom;}
+.CS-icon-article-list {
+	width:29px;
+	margin-top:-4px;
+	opacity:.7;}
+.CS-icon-popup { 
+	width:39px; 
+	margin-top:-4px;}
 .cs-icon { 
 	margin-top:-1px;
 	width:23px;
@@ -114,7 +121,10 @@ table.article-outline>tbody>tr>:nth-child(5){
 .CS-icon-table-RNM { width:32px; }
 .OA-icon-table { width:18px; }
 .OD-icon-table { width:20px; }
-.BR-icon-table { width:23px; }
+.BR-icon-table { 
+	width:23px; 
+	margin-left:-2px;}
+.BR-icon-popup { width:23px; }
 .scihub-icon-table { 
 	color:#99b3ff;
 	font-size:1.6em;
@@ -125,7 +135,9 @@ table.article-outline>tbody>tr>:nth-child(5){
 	margin-top:-2px;
 }
 .checkmark-icon { margin-left:2px; }
-.x-icon { margin-left:2px; }
+.x-icon { 
+	margin-left:2px; 
+	margin-right:2px;}
 .hr-bar {
 	margin-top:.4rem;
 	margin-bottom:.4rem; }
@@ -192,8 +204,18 @@ tr:hover .expand-button {
 	background-color:white;
 	padding:7px;
 	z-index:9998; }
+.card-cs-standard-t-requirements-section
+{	font-size:12px;
+	line-height:normal;
+	border:1px solid darkgrey;
+	background-color:white;
+	padding:7px;
+	z-index:9998;
+	border-radius:4px;
+	max-width:450px;
+	margin-left:38px;}
 .popupWrapper {
-	min-width:315px;
+	min-width:322px;
 	text-align:left;
 }
 .popupWrapperBR {
@@ -303,8 +325,14 @@ tr:hover .expand-button {
 	position:absolute; 
 	top:-142px; 
 	left:-5px; }
+
 .badge {
 	border:1px solid darkgrey;
+	font-size:10px;
+	margin-left:3px;
+	color:grey;
+	border-radius:10px;
+	padding:3px 7px;
 }
 .small-icon-OD {
 	font-size:1.5em;
@@ -324,3 +352,5 @@ tr:hover .expand-button {
 .faq-coi-bolded {
 	font-weight:bold;
 	color:green; }	
+
+
